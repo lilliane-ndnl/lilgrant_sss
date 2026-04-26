@@ -122,24 +122,11 @@ The college dataset was assembled from multiple public sources through a custom 
 
 ---
 
-## 🚀 Getting Started
+## 🌐 Try It Live
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/lilliane-ndnl/lilgrant_sss.git
-cd lilgrant_sss
+Visit **[www.lilgrant.com](https://www.lilgrant.com)** to explore the full application.
 
-# 2. Install dependencies
-npm install
-
-# 3. Start the development server
-npm run dev
-
-# 4. Build for production
-npm run build
-```
-
-> **No environment variables required.** All data is bundled — the app runs fully offline after `npm install`.
+> ⚠️ This repository is public for portfolio and review purposes only. Cloning, forking, or reusing any part of this codebase is not permitted. See [LICENSE](./LICENSE) for details.
 
 ---
 
