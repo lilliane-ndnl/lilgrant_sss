@@ -31,9 +31,18 @@ function getSizeKey(enrollment) {
 // ─── Exported Functions ───────────────────────────────────────────────────────
 
 /**
- * Returns true if a college record has enough data to be useful.
- * Ranked schools, need-blind schools, and schools with intl aid always pass.
- * All others require acceptance_rate + at least 2 more fields.
+ * Returns true if a college record has enough data to be useful in the filter pipeline.
+ * Ranked schools, need-blind schools, and schools with documented intl aid always pass
+ * regardless of other missing fields. All others require acceptance_rate plus at least
+ * 2 of: tuition/cost data, graduation rate, enrollment, median earnings.
+ *
+ * @param {Object}       c                    - College record from the database
+ * @param {number|null}  c.us_news_rank        - US News rank; < 2000 = ranked, passes immediately
+ * @param {boolean}      c.need_blind_intl     - Need-blind for international students
+ * @param {boolean}      c.need_blind_us       - Need-blind for US students
+ * @param {number|null}  c.avg_aid_intl        - Average intl student aid; > 0 passes immediately
+ * @param {number|null}  c.acceptance_rate     - Required for all non-exempt schools
+ * @returns {boolean} true if the record meets minimum data quality threshold
  */
 export function meetsMinimumDataQuality(c) {
   if (c.us_news_rank && c.us_news_rank < 2000) return true;
@@ -54,8 +63,15 @@ export function meetsMinimumDataQuality(c) {
 }
 
 /**
- * Returns the best available cost estimate for a college.
- * Fallback chain: avg_coa_after_aid → avg_annual_cost → tuition_out_of_state
+ * Returns the best available annual cost estimate for a college.
+ * Fallback chain: avg_coa_after_aid → avg_annual_cost → tuition_out_of_state → null.
+ * avg_coa_after_aid is preferred because it already reflects institutional aid grants.
+ *
+ * @param {Object}      college                    - College record
+ * @param {number|null} college.avg_coa_after_aid  - Cost of attendance after aid (most accurate)
+ * @param {number|null} college.avg_annual_cost     - Average annual cost (Scorecard)
+ * @param {number|null} college.tuition_out_of_state - Sticker tuition (last resort)
+ * @returns {number|null} Best cost estimate in dollars, or null if no data is available
  */
 export function calculateNetCost(college) {
   if (college.avg_coa_after_aid != null) return college.avg_coa_after_aid;
@@ -65,8 +81,15 @@ export function calculateNetCost(college) {
 }
 
 /**
- * Filters colleges to those within budget (with 20% hard cap above maxBudget).
+ * Filters an array of colleges to those within the student's annual budget.
+ * Applies a 20% tolerance above maxBudget as the hard exclusion threshold —
+ * schools slightly over budget are kept so they can receive a lower budget score
+ * in scoreCollege rather than disappearing entirely.
  * Colleges with no cost data are always included (benefit of the doubt).
+ *
+ * @param {Object[]}    colleges  - Array of college records
+ * @param {number|null} maxBudget - Maximum annual budget in dollars; null = no limit
+ * @returns {Object[]} Colleges where calculateNetCost(c) <= maxBudget * 1.2, or cost is null
  */
 export function filterByBudget(colleges, maxBudget) {
   if (maxBudget === null || maxBudget === undefined) return colleges;
@@ -78,8 +101,14 @@ export function filterByBudget(colleges, maxBudget) {
 }
 
 /**
- * Filters colleges by acceptance rate range.
- * Colleges with null acceptance_rate are excluded.
+ * Filters colleges to those within an acceptance rate range.
+ * Colleges with null acceptance_rate are always excluded — a missing rate
+ * cannot be safely interpreted as either very selective or open admission.
+ *
+ * @param {Object[]}    colleges - Array of college records
+ * @param {number|null} minRate  - Minimum acceptance rate as decimal (0–1); null = no minimum
+ * @param {number|null} maxRate  - Maximum acceptance rate as decimal (0–1); null = no maximum
+ * @returns {Object[]} Colleges with acceptance_rate in [minRate, maxRate]
  */
 export function filterByAcceptanceRate(colleges, minRate, maxRate) {
   return colleges.filter(c => {
@@ -91,14 +120,30 @@ export function filterByAcceptanceRate(colleges, minRate, maxRate) {
 }
 
 /**
- * Scores a college against student preferences.
- * Returns { score, budgetScore, academicScore, prefScore, intlBonus, academicFit }
+ * Scores a college against student preferences (0–100 points).
  *
  * Scoring breakdown:
- *   Budget    — up to 40 pts
- *   Academic  — up to 30 pts (also sets academicFit: REACH | MATCH | SAFETY)
- *   Prefs     — up to 20 pts (region, size, setting, major — 5 pts each)
- *   Intl bonus — up to 10 pts (for international students only)
+ * - Budget fit:   40pts — most important for intl students
+ * - Academic fit: 30pts — determines REACH/MATCH/SAFETY tier
+ * - Preferences:  20pts — region, size, setting, major (5pts each)
+ * - Intl bonus:   10pts — aid availability, need-blind status
+ *
+ * Hard exclusion: cost > 120% of budget → budgetScore = 0
+ *
+ * @param {Object}   college                       - College record
+ * @param {Object}   prefs                         - Student preferences
+ * @param {number|null} prefs.maxBudget            - Annual budget cap in dollars; null = unlimited
+ * @param {boolean}  prefs.isInternational         - Whether student is an international applicant
+ * @param {'SAT'|'ACT'|'Test-Optional'} prefs.testType - Test score type being submitted
+ * @param {string|number} prefs.sat                - SAT total score (used if testType = 'SAT')
+ * @param {string|number} prefs.act                - ACT composite score (used if testType = 'ACT')
+ * @param {string[]} prefs.regions                 - Preferred US regions; empty = no preference
+ * @param {string[]} prefs.sizes                   - Preferred size keys; empty = no preference
+ * @param {string[]} prefs.settings                - Preferred campus settings; empty = no preference
+ * @param {string[]} prefs.majors                  - Preferred majors/programs; empty = no preference
+ * @returns {{ score: number, budgetScore: number, academicScore: number,
+ *             prefScore: number, intlBonus: number,
+ *             academicFit: 'REACH'|'MATCH'|'SAFETY' }}
  */
 export function scoreCollege(college, prefs) {
   let budgetScore   = 0;
@@ -199,9 +244,16 @@ export function scoreCollege(college, prefs) {
 }
 
 /**
- * Sorts pre-scored colleges into reach / match / safety buckets.
- * Input: array of { college, score, academicFit }
- * Strategy determines how many slots each bucket gets.
+ * Distributes pre-scored colleges into reach / match / safety buckets.
+ * Bucket sizes are determined by strategy using STRATEGY_DIST constants.
+ * Within each bucket, colleges are sorted by score descending so the
+ * strongest fit appears first.
+ *
+ * @param {{ college: Object, score: number, academicFit: 'REACH'|'MATCH'|'SAFETY' }[]} scoredColleges
+ *   Array of scored college objects (typically from scoreCollege)
+ * @param {'ambitious'|'balanced'|'safe'} strategy - List-building strategy
+ * @returns {{ reach: Object[], match: Object[], safety: Object[] }}
+ *   Categorized, sorted, and capped arrays per the strategy distribution
  */
 export function categorizeResults(scoredColleges, strategy) {
   const dist = STRATEGY_DIST[strategy] || STRATEGY_DIST.balanced;
@@ -226,8 +278,12 @@ export function categorizeResults(scoredColleges, strategy) {
 }
 
 /**
- * Formats a dollar value into a short string like '$44k'.
- * Returns '—' for null, undefined, or 0.
+ * Formats a dollar amount into a compact display string (e.g. 44200 → '$44k').
+ * Uses Math.round so 1500 → '$2k', 44200 → '$44k'. Consistent with the em-dash
+ * convention used throughout the UI for missing data.
+ *
+ * @param {number|null|undefined} value - Dollar amount
+ * @returns {string} Formatted string like '$44k', or '—' for falsy values (null, 0, undefined)
  */
 export function formatCurrency(value) {
   if (!value) return '—';
@@ -235,12 +291,19 @@ export function formatCurrency(value) {
 }
 
 /**
- * Sanitizes free-text search input before it reaches the filter pipeline.
- * - Strips leading/trailing whitespace
- * - Removes characters that could form HTML/script injection vectors: < > " ' `
- * - Collapses multiple internal spaces into one
- * - Truncates to 100 characters
- * Returns '' for null, undefined, or non-string input.
+ * Sanitizes free-text search input before it enters the filter pipeline.
+ * Applied at every search onChange handler to prevent malformed queries
+ * and XSS-style character injection from reaching rendered output.
+ *
+ * Operations (in order):
+ * 1. Rejects non-string / falsy input → returns ''
+ * 2. Trims leading and trailing whitespace
+ * 3. Strips HTML/script injection characters: < > " ' `
+ * 4. Collapses multiple consecutive spaces into a single space
+ * 5. Truncates to 100 characters
+ *
+ * @param {*} input - Raw value from an input onChange event
+ * @returns {string} Sanitized string safe to use in filter comparisons, or ''
  */
 export function sanitizeSearchInput(input) {
   if (!input || typeof input !== 'string') return '';

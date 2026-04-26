@@ -131,6 +131,15 @@ The college dataset was assembled from multiple public sources through a custom 
 3. **US News Rankings (2026)** — National Universities + Liberal Arts Colleges
 4. **Manual verification** — need-blind/need-aware status, scholarship details, `intl_tags` for nuanced warnings
 
+### Scripts
+
+| Command | Purpose |
+|---|---|
+| `npm run dev` | Start local dev server |
+| `npm run build` | Production build |
+| `npm run test:run` | Run full unit test suite (53 tests) |
+| `npm run validate` | Audit the full college database — prints error/warning report, exits 1 on errors |
+
 ---
 
 ## 🧪 Testing & Data Integrity
@@ -140,7 +149,8 @@ LilGrant treats financial aid data as high-stakes information — a wrong number
 ### Run Tests
 ```bash
 npm run test        # watch mode
-npm run test:run    # single run with coverage
+npm run test:run    # single run
+npm run validate    # audit full 2,200+ school database for data errors
 ```
 
 ### What's Tested
