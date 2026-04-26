@@ -38,9 +38,10 @@ Thumbs.db
 desktop.ini
 $RECYCLE.BIN/
 
-# Temporary scripts
+# Temporary one-off scripts (permanent pipeline scripts are tracked)
 scripts/strip-vietnamese.js
-scripts/merge-*.js
+scripts/merge-international-data.js
+scripts/merge-common-app-data.js
 
 # Netlify generated files
 .netlify
