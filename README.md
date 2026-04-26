@@ -120,8 +120,6 @@ The college dataset was assembled from multiple public sources through a custom 
 3. **US News Rankings (2026)** — National Universities + Liberal Arts Colleges
 4. **Manual verification** — need-blind/need-aware status, scholarship details, `intl_tags` for nuanced warnings
 
-> All data is pre-processed and bundled statically. No database. No API keys. Instant load times.
-
 ---
 
 ## 🚀 Getting Started
