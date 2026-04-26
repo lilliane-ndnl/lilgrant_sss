@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Search, SlidersHorizontal, X, ChevronDown, ChevronUp } from "lucide-react";
+import { sanitizeSearchInput } from '@/lib/filterEngine';
 
 const US_STATES = [
   "AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA",
@@ -141,7 +142,7 @@ export default function UniversitySearchPanel({ filters, onFilterChange, onReset
               type="text"
               placeholder="Search by name, city, or state…"
               value={filters.search || ""}
-              onChange={e => handle("search", e.target.value)}
+              onChange={e => handle("search", sanitizeSearchInput(e.target.value))}
               className="flex-1 bg-transparent text-sm outline-none"
               style={{ color: "rgba(255,255,255,0.92)", caretColor: "white" }}
             />

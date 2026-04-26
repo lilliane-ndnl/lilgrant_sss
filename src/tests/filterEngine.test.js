@@ -9,6 +9,7 @@ import {
   categorizeResults,
   calculateNetCost,
   formatCurrency,
+  sanitizeSearchInput,
 } from '../lib/filterEngine';
 import { validateCollegeRecord, validateDatabase } from '../lib/dataValidator';
 
@@ -398,6 +399,45 @@ describe('validateDatabase', () => {
     expect(result.total).toBe(0);
     expect(result.valid).toBe(0);
     expect(result.duplicates).toHaveLength(0);
+  });
+});
+
+// ─── sanitizeSearchInput ──────────────────────────────────────────────────────
+
+describe('sanitizeSearchInput', () => {
+  test('trims leading and trailing whitespace', () => {
+    expect(sanitizeSearchInput('  harvard  ')).toBe('harvard');
+  });
+
+  test('removes < > characters', () => {
+    expect(sanitizeSearchInput('MIT <script>')).toBe('MIT script');
+    expect(sanitizeSearchInput('<b>Yale</b>')).toBe('bYale/b');
+  });
+
+  test('removes quote characters', () => {
+    expect(sanitizeSearchInput('"Princeton" and \'Brown\'')).toBe('Princeton and Brown');
+    expect(sanitizeSearchInput('back`tick')).toBe('backtick');
+  });
+
+  test('normalizes multiple spaces to single space', () => {
+    expect(sanitizeSearchInput('Harvard   University')).toBe('Harvard University');
+    expect(sanitizeSearchInput('  MIT  ')).toBe('MIT');
+  });
+
+  test('truncates input longer than 100 characters', () => {
+    const long = 'a'.repeat(150);
+    expect(sanitizeSearchInput(long)).toHaveLength(100);
+  });
+
+  test('returns empty string for null input', () => {
+    expect(sanitizeSearchInput(null)).toBe('');
+    expect(sanitizeSearchInput(undefined)).toBe('');
+  });
+
+  test('returns empty string for non-string input', () => {
+    expect(sanitizeSearchInput(42)).toBe('');
+    expect(sanitizeSearchInput([])).toBe('');
+    expect(sanitizeSearchInput({})).toBe('');
   });
 });
 

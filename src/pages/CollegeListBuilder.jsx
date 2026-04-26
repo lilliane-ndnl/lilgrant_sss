@@ -1,5 +1,5 @@
 import { db } from '@/api/base44Client';
-import { scoreCollege, categorizeResults, calculateNetCost, filterByBudget } from '@/lib/filterEngine';
+import { scoreCollege, categorizeResults, calculateNetCost, filterByBudget, sanitizeSearchInput } from '@/lib/filterEngine';
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
@@ -237,7 +237,7 @@ function DreamSchoolSearch({ colleges, selected, onChange }) {
               className="flex-1 bg-transparent text-sm text-white outline-none placeholder:text-white/40"
               placeholder="Search colleges…"
               value={query}
-              onChange={e => { setQuery(e.target.value); setOpen(true); }}
+              onChange={e => { setQuery(sanitizeSearchInput(e.target.value)); setOpen(true); }}
               onFocus={() => setOpen(true)}
             />
           </div>

@@ -233,3 +233,20 @@ export function formatCurrency(value) {
   if (!value) return '—';
   return `$${Math.round(value / 1000)}k`;
 }
+
+/**
+ * Sanitizes free-text search input before it reaches the filter pipeline.
+ * - Strips leading/trailing whitespace
+ * - Removes characters that could form HTML/script injection vectors: < > " ' `
+ * - Collapses multiple internal spaces into one
+ * - Truncates to 100 characters
+ * Returns '' for null, undefined, or non-string input.
+ */
+export function sanitizeSearchInput(input) {
+  if (!input || typeof input !== 'string') return '';
+  return input
+    .trim()
+    .replace(/[<>"'`]/g, '')
+    .replace(/\s+/g, ' ')
+    .slice(0, 100);
+}
