@@ -8,7 +8,7 @@ LilGrant is a full-stack data product and editorial platform built specifically 
 
 ## Live Demo
 
-🌐 [lilgrant.netlify.app](https://lilgrant.netlify.app) *(Netlify — auto-deploys on push)*
+🌐 [www.lilgrant.com](https://www.lilgrant.com) *(Netlify — auto-deploys on push)*
 
 ---
 
