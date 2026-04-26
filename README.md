@@ -13,7 +13,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Netlify](https://img.shields.io/badge/Deployed-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.lilgrant.com)
-[![Tests](https://img.shields.io/badge/Tests-44%2F44_Passing-brightgreen?style=for-the-badge&logo=vitest)](./src/tests/)
+[![Tests](https://img.shields.io/badge/Tests-53%2F53_Passing-brightgreen?style=for-the-badge&logo=vitest)](./src/tests/)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
 
 <br/>
@@ -52,6 +52,7 @@ Search and filter **1,500+ colleges** with international-student-specific criter
 - 💰 **Net Cost Filter** — Average cost *after* international student aid
 - 📍 Region, Setting, Acceptance Rate, Test Policy, Enrollment Size
 - ⭐ **Curated Collections** — Hand-picked thematic lists (*Best for Financial Aid*, *Hidden Gems*, *Strong Merit Schools*)
+- ⚡ **Performance** — Debounced search (300ms), paginated results (24/page), explicit `useMemo` dependencies — renders 24 cards instead of 2,200+ on load
 
 ### 🔬 Deep-Dive College Detail Pages
 6-tab profiles for every school:
@@ -91,6 +92,7 @@ Long-form guides written for international applicants with a custom Markdown ren
 | **Data Layer** | Static JSON (bundled) | 1,500+ colleges, zero backend latency |
 | **Content** | Custom Markdown Renderer | No external library — hand-built parser with rich components |
 | **Export** | SheetJS (xlsx) | Client-side Excel generation, no server |
+| **Testing** | Vitest + @testing-library/react | 53 unit tests — pure functions + React hooks |
 | **Deployment** | Netlify CI/CD via GitHub | Auto-deploy on every push to `main` |
 
 ---
@@ -98,18 +100,26 @@ Long-form guides written for international applicants with a custom Markdown ren
 ## 📐 Architecture
 
 ```
+.github/
+└── PULL_REQUEST_TEMPLATE.md   # Checklist: tests, mobile, data integrity
 src/
-├── content/articles/     # 21 original markdown guides
+├── content/articles/          # 21 original markdown guides
 ├── data/
-│   ├── articles.js       # Article metadata + Vite ?raw imports
-│   ├── colleges-*.json   # Enriched college dataset (1,500+ schools)
-│   └── dormChecklist.js  # Structured checklist data
-├── pages/                # Route-level components (Universities, Blog, Compare, etc.)
+│   ├── articles.js            # Article metadata + Vite ?raw imports
+│   ├── colleges-*.json        # Enriched college dataset (2,200+ schools)
+│   └── dormChecklist.js       # Structured checklist data
+├── lib/
+│   ├── filterEngine.js        # Pure scoring/filtering functions (exported, tested)
+│   ├── dataValidator.js       # College record validation + database audit
+│   └── useDebounce.js         # Generic debounce hook (300ms default)
+├── tests/
+│   └── filterEngine.test.js   # 53 unit tests (Vitest)
+├── pages/                     # Route-level components (Universities, Blog, Compare, etc.)
 ├── components/
-│   ├── college-detail/   # 6 tab components + Recharts visualizations
-│   ├── universities/     # Filter sidebar, college cards, curated collections
-│   └── layout/           # Navbar, footer, app shell
-└── scripts/              # Node.js data enrichment pipeline (ESM)
+│   ├── college-detail/        # 6 tab components + Recharts visualizations
+│   ├── universities/          # Filter sidebar, college cards, curated collections
+│   └── layout/                # Navbar, footer, app shell
+└── scripts/                   # Node.js data enrichment pipeline (ESM)
 ```
 
 ### Data Pipeline
@@ -136,9 +146,11 @@ npm run test:run    # single run with coverage
 ### What's Tested
 | Module | Tests | Purpose |
 |---|---|---|
-| `filterEngine.js` | 36 tests | Budget filtering, scoring algorithm, categorization, formatting |
-| `dataValidator.js` | 8 tests | Data quality checks, duplicate detection |
-| **Total** | **44 / 44 passing** | |
+| `filterEngine.js` | 38 tests | Budget filtering, scoring algorithm, categorization, formatting, input sanitization |
+| `dataValidator.js` | 9 tests | Data quality checks, duplicate detection |
+| `useDebounce.js` | 2 tests | Initial value, timer-controlled debounce via fake timers |
+| `sanitizeSearchInput` | 7 tests | XSS stripping, whitespace normalization, type guards, length cap |
+| **Total** | **53 / 53 passing** | |
 
 ### Data Validation
 A dedicated validator runs against the full 2,200+ school dataset and flags:
@@ -187,7 +199,11 @@ LilGrant displays `—` (not `N/A`) when data is genuinely unavailable, and link
 | ✅ Live | College List Builder (11-step wizard) |
 | ✅ Live | US News Rankings engine |
 | ✅ Live | Golden Gate curated collections |
-| ✅ Live | Unit test suite (Vitest — 44 tests passing) |
+| ✅ Live | Unit test suite (Vitest — 53 tests passing) |
+| ✅ Live | Universities Hub pagination (24/page + Load More) |
+| ✅ Live | Debounced search + optimized `useMemo` dependencies |
+| ✅ Live | Input sanitization on all search fields (XSS-safe) |
+| ✅ Live | GitHub PR template with testing + data integrity checklist |
 | 🔄 In Progress | Hero images via Wikipedia API |
 | 📋 Planned | Scholarship database |
 | 📋 Planned | Application profile / extracurricular enhancer |
