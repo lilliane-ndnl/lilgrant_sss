@@ -1,5 +1,6 @@
 import { db } from '@/api/base44Client';
-import React, { useState, useMemo } from "react";
+import { useDebounce } from '@/lib/useDebounce';
+import React, { useState, useMemo, useEffect } from "react";
 
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
@@ -58,9 +59,16 @@ const DEFAULT_FILTERS = {
   preset: "all",
 };
 
+const PAGE_SIZE = 24;
+
 export default function Universities() {
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const queryClient = useQueryClient();
+
+  // Debounce the search input so the filter pipeline only re-runs 300ms after
+  // the user stops typing, instead of on every keystroke.
+  const debouncedSearch = useDebounce(filters.search, 300);
 
   const { data: colleges = [], isLoading } = useQuery({
     queryKey: ["colleges"],
@@ -123,15 +131,15 @@ export default function Universities() {
   }, [fourYearColleges]);
 
   const filtered = useMemo(() => {
-    // ── Step 1: apply active tab filter (hard exclude non-matching schools) ──
+    // ── Step 1: apply active tab filter ──────────────────────────────────────
     const activeTab = TABS.find(t => t.key === filters.preset);
     let result = activeTab?.filter
       ? fourYearColleges.filter(activeTab.filter)
       : [...fourYearColleges];
 
-    // ── Step 2: search query ──────────────────────────────────────────────────
-    if (filters.search) {
-      const q = filters.search.toLowerCase();
+    // ── Step 2: debounced search query ────────────────────────────────────────
+    if (debouncedSearch) {
+      const q = debouncedSearch.toLowerCase();
       result = result.filter(c =>
         c.name?.toLowerCase().includes(q) ||
         c.city?.toLowerCase().includes(q) ||
@@ -150,7 +158,6 @@ export default function Universities() {
     if (filters.setting)                result = result.filter(c => c.setting === filters.setting);
 
     // ── Step 4: sort ──────────────────────────────────────────────────────────
-    // Null-safe helpers — unknowns always fall to the bottom
     const getAcceptRate = c => c.acceptance_rate != null ? c.acceptance_rate : 1.0;
     const getCost       = c => c.avg_coa_after_aid ?? c.avg_annual_cost ?? c.tuition_out_of_state ?? 999999;
     const getAid        = c => c.avg_aid_intl ?? -1;
@@ -199,7 +206,25 @@ export default function Universities() {
     }
 
     return result;
-  }, [fourYearColleges, filters]);
+  }, [
+    fourYearColleges,
+    debouncedSearch,
+    filters.preset,
+    filters.state,
+    filters.region,
+    filters.aid_type,
+    filters.control_type,
+    filters.minAid,
+    filters.maxCost,
+    filters.maxAccept,
+    filters.setting,
+    filters.sortBy,
+  ]);
+
+  // Reset pagination whenever the filtered result set changes
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [filtered]);
 
   return (
     <div className="min-h-screen">
@@ -310,9 +335,9 @@ export default function Universities() {
         <p className="text-sm text-center" style={{ color: "rgba(255,255,255,0.65)" }}>
           {isLoading
             ? "Loading..."
-            : filters.preset === "all"
-              ? `Showing ${filtered.length.toLocaleString()} of ${tabCounts.all.toLocaleString()} schools`
-              : `Showing ${filtered.length.toLocaleString()} ${filtered.length === 1 ? "school" : "schools"}`
+            : filtered.length === 0
+              ? "No schools match your filters"
+              : `Showing ${Math.min(visibleCount, filtered.length).toLocaleString()} of ${filtered.length.toLocaleString()} schools`
           }
         </p>
       </div>
@@ -328,16 +353,33 @@ export default function Universities() {
             <p style={{ color: "rgba(255,255,255,0.65)" }}>No universities match your filters.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filtered.map(college => (
-              <CollegeCard
-                key={college.id}
-                college={college}
-                isFavorited={favCollegeIds.has(college.id)}
-                onToggleFavorite={() => toggleFavMutation.mutate(college)}
-              />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {filtered.slice(0, visibleCount).map(college => (
+                <CollegeCard
+                  key={college.id}
+                  college={college}
+                  isFavorited={favCollegeIds.has(college.id)}
+                  onToggleFavorite={() => toggleFavMutation.mutate(college)}
+                />
+              ))}
+            </div>
+
+            {visibleCount < filtered.length && (
+              <div className="flex flex-col items-center gap-2 mt-10">
+                <button
+                  onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                  className="px-8 py-3 rounded-xl text-sm font-semibold transition-all hover:opacity-90"
+                  style={{ backgroundColor: "rgba(255,255,255,0.12)", color: "rgba(255,255,255,0.85)", border: "1px solid rgba(255,255,255,0.2)" }}
+                >
+                  Load {Math.min(PAGE_SIZE, filtered.length - visibleCount)} more schools
+                </button>
+                <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+                  {filtered.length - visibleCount} remaining
+                </p>
+              </div>
+            )}
+          </>
         )}
       </div>
 

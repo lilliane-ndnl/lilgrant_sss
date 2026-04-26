@@ -1,4 +1,6 @@
-import { describe, test, expect } from 'vitest';
+import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
+import { renderHook, act } from '@testing-library/react';
+import { useDebounce } from '../lib/useDebounce';
 import {
   meetsMinimumDataQuality,
   filterByBudget,
@@ -396,5 +398,32 @@ describe('validateDatabase', () => {
     expect(result.total).toBe(0);
     expect(result.valid).toBe(0);
     expect(result.duplicates).toHaveLength(0);
+  });
+});
+
+// ─── useDebounce ──────────────────────────────────────────────────────────────
+
+describe('useDebounce', () => {
+  beforeEach(() => { vi.useFakeTimers(); });
+  afterEach(() => { vi.useRealTimers(); });
+
+  test('returns initial value immediately', () => {
+    const { result } = renderHook(() => useDebounce('hello', 300));
+    expect(result.current).toBe('hello');
+  });
+
+  test('debounces value changes', () => {
+    const { result, rerender } = renderHook(
+      ({ value }) => useDebounce(value, 300),
+      { initialProps: { value: 'hello' } }
+    );
+
+    rerender({ value: 'world' });
+    // value should not have changed yet — timer hasn't fired
+    expect(result.current).toBe('hello');
+
+    act(() => { vi.advanceTimersByTime(300); });
+    // now the timer has fired — value should be updated
+    expect(result.current).toBe('world');
   });
 });
