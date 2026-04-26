@@ -1,0 +1,21 @@
+{
+  "name": "Favorite",
+  "type": "object",
+  "properties": {
+    "college_id": {
+      "type": "string",
+      "description": "Reference to the College entity ID"
+    },
+    "college_name": {
+      "type": "string",
+      "description": "Name of the favorited college for quick display"
+    },
+    "notes": {
+      "type": "string",
+      "description": "User notes about this college"
+    }
+  },
+  "required": [
+    "college_id"
+  ]
+}

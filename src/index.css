@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+
+    /* LilGrant purple palette — matches #8B6BAE / #9B7DC0 range */
+    --purple-dark:  270 30% 45%;
+    --purple-mid:   270 35% 58%;
+    --purple-light: 270 35% 68%;
+
+    --background: 270 30% 60%;
+    --foreground: 0 0% 100%;
+    --card: 270 28% 50%;
+    --card-foreground: 0 0% 100%;
+    --popover: 270 28% 50%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 270 35% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 25% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 270 20% 65%;
+    --muted-foreground: 270 15% 85%;
+    --accent: 310 50% 75%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 20% 70%;
+    --input: 270 20% 65%;
+    --ring: 270 35% 75%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+    /* Full purple body matching LilGrant */
+    background: linear-gradient(135deg, #9c7ec0 0%, #8b6bae 40%, #7a5a9d 100%);
+    min-height: 100vh;
+  }
+  html {
+    background: #8b6bae;
+  }
+}
+
+/* Typing cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: #c084fc;
+  font-weight: 300;
+}
+
+/* Smooth fade-in */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+.fade-in-up-1 { animation-delay: 0.1s; opacity: 0; }
+.fade-in-up-2 { animation-delay: 0.25s; opacity: 0; }
+.fade-in-up-3 { animation-delay: 0.4s; opacity: 0; }
+.fade-in-up-4 { animation-delay: 0.55s; opacity: 0; }

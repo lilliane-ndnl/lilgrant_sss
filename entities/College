@@ -1,0 +1,291 @@
+{
+  "name": "College",
+  "type": "object",
+  "properties": {
+    "scorecard_id": {
+      "type": "number",
+      "description": "U.S. College Scorecard unique numeric ID (unitid)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the college or university"
+    },
+    "city": {
+      "type": "string",
+      "description": "City where the college is located"
+    },
+    "state": {
+      "type": "string",
+      "description": "US state abbreviation"
+    },
+    "region": {
+      "type": "string",
+      "enum": [
+        "Northeast",
+        "Southeast",
+        "Midwest",
+        "Southwest",
+        "West",
+        "Mid-Atlantic"
+      ],
+      "description": "Geographic region"
+    },
+    "control_type": {
+      "type": "string",
+      "enum": [
+        "Public",
+        "Private Non-Profit",
+        "Private For-Profit"
+      ],
+      "description": "Institution control type"
+    },
+    "aid_type": {
+      "type": "string",
+      "enum": [
+        "Need-Blind",
+        "Need-Aware"
+      ],
+      "description": "Financial aid policy for international students"
+    },
+    "avg_aid_intl": {
+      "type": "number",
+      "description": "Average financial aid for international students (USD)"
+    },
+    "pct_intl_receiving_aid": {
+      "type": "number",
+      "description": "Percentage of international students receiving aid (0-100)"
+    },
+    "acceptance_rate": {
+      "type": "number",
+      "description": "Overall acceptance rate as a decimal (0-1)"
+    },
+    "intl_acceptance_rate": {
+      "type": "number",
+      "description": "International student acceptance rate as a decimal (0-1)"
+    },
+    "intl_yield": {
+      "type": "number",
+      "description": "International student yield rate as a decimal (0-1) \u2014 enrolled/admitted"
+    },
+    "total_enrollment": {
+      "type": "number",
+      "description": "Total student enrollment"
+    },
+    "tuition_out_of_state": {
+      "type": "number",
+      "description": "Out-of-state tuition in USD"
+    },
+    "tuition_in_state": {
+      "type": "number",
+      "description": "In-state tuition in USD"
+    },
+    "setting": {
+      "type": "string",
+      "enum": [
+        "City",
+        "Suburb",
+        "Town",
+        "Rural"
+      ],
+      "description": "Campus setting"
+    },
+    "website_url": {
+      "type": "string",
+      "description": "College website URL"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "College image URL"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the college"
+    },
+    "graduation_rate": {
+      "type": "number",
+      "description": "6-year graduation rate as decimal (0-1)"
+    },
+    "retention_rate": {
+      "type": "number",
+      "description": "First-year retention rate as decimal (0-1)"
+    },
+    "median_earnings_10yr": {
+      "type": "number",
+      "description": "Median earnings 10 years after enrollment (USD)"
+    },
+    "median_earnings_6yr": {
+      "type": "number",
+      "description": "Median earnings 6 years after enrollment (USD)"
+    },
+    "avg_annual_cost": {
+      "type": "number",
+      "description": "Average annual net cost (after aid) in USD"
+    },
+    "pct_receiving_pell": {
+      "type": "number",
+      "description": "Percentage of students receiving Pell grants (0-100)"
+    },
+    "student_faculty_ratio": {
+      "type": "number",
+      "description": "Student to faculty ratio"
+    },
+    "median_debt_graduation": {
+      "type": "number",
+      "description": "Median total debt at graduation in USD"
+    },
+    "sat_reading_25": {
+      "type": "number",
+      "description": "SAT Evidence-Based Reading 25th percentile"
+    },
+    "sat_reading_75": {
+      "type": "number",
+      "description": "SAT Evidence-Based Reading 75th percentile"
+    },
+    "sat_math_25": {
+      "type": "number",
+      "description": "SAT Math 25th percentile"
+    },
+    "sat_math_75": {
+      "type": "number",
+      "description": "SAT Math 75th percentile"
+    },
+    "act_25": {
+      "type": "number",
+      "description": "ACT Composite 25th percentile"
+    },
+    "act_75": {
+      "type": "number",
+      "description": "ACT Composite 75th percentile"
+    },
+    "undergrad_enrollment": {
+      "type": "number",
+      "description": "Undergraduate enrollment count"
+    },
+    "grad_enrollment": {
+      "type": "number",
+      "description": "Graduate enrollment count"
+    },
+    "pct_women": {
+      "type": "number",
+      "description": "Percentage of women enrolled (0-100)"
+    },
+    "pct_intl_students": {
+      "type": "number",
+      "description": "Percentage of international students (0-100)"
+    },
+    "loan_repayment_rate": {
+      "type": "number",
+      "description": "3-year loan repayment rate as decimal (0-1)"
+    },
+    "pct_students_with_loans": {
+      "type": "number",
+      "description": "Percentage of students with federal loans (0-100)"
+    },
+    "predominant_degree": {
+      "type": "string",
+      "enum": [
+        "Associate",
+        "Bachelor's",
+        "Master's",
+        "Doctoral",
+        "Certificate"
+      ],
+      "description": "Predominant degree awarded"
+    },
+    "popular_programs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of popular programs/majors from CIP data"
+    },
+    "campus_housing": {
+      "type": "boolean",
+      "description": "Whether campus housing is available"
+    },
+    "varsity_sports": {
+      "type": "boolean",
+      "description": "Whether the school has varsity sports"
+    },
+    "pct_asian": {
+      "type": "number",
+      "description": "Percentage Asian students (0-100)"
+    },
+    "pct_black": {
+      "type": "number",
+      "description": "Percentage Black/African American students (0-100)"
+    },
+    "pct_hispanic": {
+      "type": "number",
+      "description": "Percentage Hispanic students (0-100)"
+    },
+    "pct_white": {
+      "type": "number",
+      "description": "Percentage White students (0-100)"
+    },
+    "intl_aid_notes": {
+      "type": "string",
+      "description": "Tags and notes on international student financial aid (e.g. generous_aid, affordable, early_admission)"
+    },
+    "uses_common_app": {
+      "type": "boolean",
+      "description": "Whether the school accepts Common App applications"
+    },
+    "intl_applicants": {
+      "type": "number",
+      "description": "Number of international student applicants"
+    },
+    "intl_admitted": {
+      "type": "number",
+      "description": "Number of international students admitted"
+    },
+    "intl_enrolled": {
+      "type": "number",
+      "description": "Number of international students enrolled"
+    },
+    "ed_deadline": {
+      "type": "string",
+      "description": "Early Decision application deadline"
+    },
+    "ea_deadline": {
+      "type": "string",
+      "description": "Early Action application deadline"
+    },
+    "rd_deadline": {
+      "type": "string",
+      "description": "Regular Decision application deadline"
+    },
+    "testing_policy": {
+      "type": "string",
+      "description": "Test policy: Required, Optional, Test-Free, etc."
+    },
+    "meets_full_need": {
+      "type": "boolean",
+      "description": "Whether the school meets 100% of demonstrated financial need for international students"
+    },
+    "scholarship_name": {
+      "type": "string",
+      "description": "Name of largest merit scholarship for international students"
+    },
+    "scholarship_link": {
+      "type": "string",
+      "description": "Link to scholarship information"
+    },
+    "scholarship_info": {
+      "type": "string",
+      "description": "Details about the scholarship"
+    },
+    "us_news_rank": {
+      "type": "number",
+      "description": "US News National Universities 2025 rank"
+    },
+    "data_cached": {
+      "type": "boolean",
+      "description": "Whether Scorecard data has been fetched and stored"
+    }
+  },
+  "required": [
+    "name",
+    "aid_type"
+  ]
+}
