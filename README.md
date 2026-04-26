@@ -1,139 +1,170 @@
-# LilGrant — College Financial Aid Discovery for International Students
+<div align="center">
 
-> **Find US colleges that will actually fund your education.**
+# 🎓 LilGrant
 
-LilGrant is a full-stack data product and editorial platform built specifically for international students navigating US college admissions and financial aid. It combines a curated database of 680+ institutions with rich filtering, school comparison, AI-assisted list building, and an original content library of 21 long-form guides.
+### *Because every student deserves to know who will actually fund their dream.*
+
+**The financial aid intelligence platform built for the 1.1 million international students navigating U.S. college admissions every year.**
+
+<br/>
+
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Netlify](https://img.shields.io/badge/Deployed-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.lilgrant.com)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
+
+<br/>
+
+**[🌐 Live Demo → www.lilgrant.com](https://www.lilgrant.com)**  &nbsp;|&nbsp;  **[📂 GitHub → lilgrant_sss](https://github.com/lilliane-ndnl/lilgrant_sss)**
+
+</div>
 
 ---
 
-## Live Demo
+## 🏆 Recognition
 
-🌐 [www.lilgrant.com](https://www.lilgrant.com) *(Netlify — auto-deploys on push)*
-
----
-
-## What It Does
-
-Most college search tools are built for US citizens. Financial aid data for international students is scattered, incomplete, and buried in PDFs. LilGrant solves this by:
-
-- Surfacing which schools offer need-blind vs. need-aware admissions for international students
-- Showing average aid amounts, percentage of international students receiving aid, and net cost after awards
-- Tagging schools with honest labels like *"Full-Pay School"*, *"Meets Full Need"*, *"Need Aid? Risky Apply"*
-- Letting students filter, compare, and build a college list based on affordability — not just rankings
+> **1st Runner-Up — "Make It Happen" Grant**
+> *University of Rochester · 2026*
+>
+> Awarded to projects demonstrating exceptional social impact, technical execution, and real-world problem-solving. LilGrant was recognized for its data-driven approach to democratizing access to U.S. higher education for international students.
 
 ---
 
-## Key Features
+## 🔍 The Problem vs. The Solution
+
+| ❌ The Problem | ✅ LilGrant's Solution |
+|---|---|
+| Financial aid data for international students is scattered across hundreds of PDFs and CDS forms | Single searchable database of **1,500+ U.S. colleges** enriched with international-specific aid data |
+| Generic college search tools are built for U.S. citizens — international filters don't exist | **700+ institutions** tagged with need-blind/need-aware status, avg. aid amounts, and % of international students receiving aid |
+| Students waste months applying to schools that will never fund them | Honest labels like *"Full-Pay School"*, *"Meets Full Need"*, *"Need Aid? Risky Apply"* surface the truth upfront |
+| No tool connects financial aid data to application strategy | 21 original long-form guides cover every stage — from school selection to visa and work rules |
+
+---
+
+## ✨ Key Features
 
 ### 🏫 Universities Hub
-- **680+ colleges** with enriched financial aid data for international students
-- Filter by aid type (need-blind / need-aware / merit), region, acceptance rate, test policy, COA, setting
-- Live search with instant results
-- **Curated Collections** — hand-picked thematic lists (e.g. *"Best for Financial Aid"*, *"Hidden Gems"*)
+Search and filter **1,500+ colleges** with international-student-specific criteria no other tool provides:
+- 🎯 **Aid Type Filter** — Need-Blind vs. Need-Aware vs. Merit-Only
+- 💰 **Net Cost Filter** — Average cost *after* international student aid
+- 📍 Region, Setting, Acceptance Rate, Test Policy, Enrollment Size
+- ⭐ **Curated Collections** — Hand-picked thematic lists (*Best for Financial Aid*, *Hidden Gems*, *Strong Merit Schools*)
 
-### 🔍 College Detail Pages
-- 6-tab deep-dive: Overview, Academics, Financial Aid, Admissions, Campus, and About
-- Charts for acceptance rates, test score distributions, and demographic breakdown
-- Scholarship cards with scholarship name, award range, and how-to-apply notes
-- International-specific tags and honest warnings where relevant
+### 🔬 Deep-Dive College Detail Pages
+6-tab profiles for every school:
+- 📊 Interactive charts: acceptance rates, test score distributions, demographics
+- 🏅 Scholarship cards with award range, eligibility, and how-to-apply notes
+- ⚠️ International-specific warning tags with plain-English explanations
 
-### ⚖️ Compare Tool
-- Side-by-side comparison of up to 4 schools across all key metrics
-- Net cost, aid type, merit scholarships, deadlines — in one view
+### ⚖️ Side-by-Side Comparison Tool
+Compare up to 4 schools across every metric that matters — net cost, aid type, deadlines, merit scholarships — in a single unified view.
 
 ### 🤖 AI College List Builder
-- Guided prompt flow that generates a personalized college list based on budget, GPA, test scores, and preferences
+A guided prompt flow that generates a personalized college list based on budget, GPA, test scores, and geographic preferences.
 
-### 📊 Rankings
-- Custom rankings by financial aid generosity, net cost for international students, and selectivity
-- Separate tables for National Universities and Liberal Arts Colleges
+### 📊 Custom Rankings Engine
+Sortable tables ranking schools by financial aid generosity, net cost for international students, and selectivity — separate views for National Universities and Liberal Arts Colleges.
 
-### 📝 Blog — 21 Original Articles
-- Long-form guides written for international applicants covering financial aid, admissions strategy, extracurriculars, essays, standardized testing, and visa/work rules
-- Custom markdown renderer with rich components: **Myth Cards** (for fact-vs-myth articles), **Tip Blocks**, author attribution, doodle decorations, and internal navigation links
-- Tag-based filtering and full-text search
+### 📝 Editorial Content Library — 21 Original Articles
+Long-form guides written for international applicants with a custom Markdown renderer featuring:
+- 🃏 **Myth Cards** — Fact vs. fiction format for misconception-heavy topics
+- 💡 **Tip Blocks** — Highlighted action items
+- 🔗 Internal navigation links, author attribution, and decorative illustrations
+- 🔍 Tag-based filtering + full-text search across all articles
 
 ### 📦 Resources Hub
-- Interactive dorm packing checklist with category tabs and progress tracking
-- One-click XLSX export for offline use
-- Expandable card layout ready for future resources
+- Interactive dorm packing checklist with category tabs and live progress tracking
+- One-click **XLSX export** for offline use (SheetJS / client-side, no server needed)
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| **Framework** | React 18 + Vite |
-| **Routing** | React Router v6 |
-| **Styling** | Tailwind CSS + custom inline styles |
-| **UI Components** | shadcn/ui (Radix UI primitives) |
-| **Data** | Static JSON (680+ colleges, enriched from IPEDS / College Scorecard / Common Data Sets) |
-| **Content** | Markdown files with custom renderer (no external MD library) |
-| **Export** | SheetJS (xlsx) for client-side Excel generation |
-| **Deployment** | Netlify (CI/CD via GitHub) |
+| Category | Technology | Purpose |
+|---|---|---|
+| **Frontend Framework** | React 18 + Vite | Component architecture, hot module replacement |
+| **Routing** | React Router v6 | Client-side SPA navigation |
+| **Styling** | Tailwind CSS + Radix UI (shadcn/ui) | Utility-first styling with accessible primitives |
+| **Data Layer** | Static JSON (bundled) | 1,500+ colleges, zero backend latency |
+| **Content** | Custom Markdown Renderer | No external library — hand-built parser with rich components |
+| **Export** | SheetJS (xlsx) | Client-side Excel generation, no server |
+| **Deployment** | Netlify CI/CD via GitHub | Auto-deploy on every push to `main` |
 
 ---
 
-## Project Structure
+## 📐 Architecture
 
 ```
 src/
-├── content/articles/     # 21 markdown articles
+├── content/articles/     # 21 original markdown guides
 ├── data/
-│   ├── articles.js       # Article metadata + raw imports
-│   ├── colleges-*.json   # Enriched college dataset (680+ schools)
+│   ├── articles.js       # Article metadata + Vite ?raw imports
+│   ├── colleges-*.json   # Enriched college dataset (1,500+ schools)
 │   └── dormChecklist.js  # Structured checklist data
-├── pages/                # Route-level components
-│   ├── Universities.jsx
-│   ├── CollegeDetail.jsx
-│   ├── Blog.jsx / BlogArticle.jsx
-│   ├── Rankings.jsx
-│   ├── Compare.jsx
-│   ├── CollegeListBuilder.jsx
-│   └── Resources.jsx
+├── pages/                # Route-level components (Universities, Blog, Compare, etc.)
 ├── components/
-│   ├── college-detail/   # 7 tab components + charts
-│   ├── universities/     # Filter sidebar, college cards, collections
-│   ├── blog/             # Author avatar
+│   ├── college-detail/   # 6 tab components + Recharts visualizations
+│   ├── universities/     # Filter sidebar, college cards, curated collections
 │   └── layout/           # Navbar, footer, app shell
-└── scripts/              # Data enrichment + processing scripts
+└── scripts/              # Node.js data enrichment pipeline (ESM)
 ```
 
----
+### Data Pipeline
 
-## Data Pipeline
+The college dataset was assembled from multiple public sources through a custom enrichment pipeline:
 
-The college dataset was built from multiple public sources and enriched through a multi-stage pipeline:
+1. **IPEDS / College Scorecard API** — enrollment, tuition, test scores, graduation rates, earnings
+2. **Common Data Set (Section H)** — international aid amounts, % receiving aid, aid type per institution
+3. **US News Rankings (2026)** — National Universities + Liberal Arts Colleges
+4. **Manual verification** — need-blind/need-aware status, scholarship details, `intl_tags` for nuanced warnings
 
-1. **Base data** — IPEDS via College Scorecard API (enrollment, tuition, test scores, graduation rates)
-2. **Aid data** — Common Data Set Section H (international aid amounts, % receiving aid, aid type)
-3. **Rankings** — US News National Universities and Liberal Arts Colleges (2026)
-4. **Manual enrichment** — Need-blind/need-aware status, scholarship details, application deadlines, early decision policies, `intl_tags` for nuanced labeling
-
-Scripts live in `/scripts/` and are written as ES modules for Node.js.
+> All data is pre-processed and bundled statically. No database. No API keys. Instant load times.
 
 ---
 
-## Running Locally
+## 🚀 Getting Started
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/lilliane-ndnl/lilgrant_sss.git
 cd lilgrant_sss
+
+# 2. Install dependencies
 npm install
+
+# 3. Start the development server
 npm run dev
+
+# 4. Build for production
+npm run build
 ```
 
-No environment variables required — all data is bundled statically.
+> **No environment variables required.** All data is bundled — the app runs fully offline after `npm install`.
 
 ---
 
-## About
+## 💡 About the Builder
 
-Built by **Lilliane Nguyen** — an international student who went through the US college admissions process and couldn't find a single tool that honestly answered the question: *"Which schools will actually give me money?"*
+<div align="center">
+
+**Built by Lilliane Nguyen**
+
+*Finance & Accounting student at the University of Rochester — using technology to solve real problems at the intersection of education access and financial equity.*
+
+As an international student herself, Lilliane went through the US college admissions process without a single tool that honestly answered the question: ***"Which schools will actually give me money?"***
 
 LilGrant is the tool she wished had existed.
 
+</div>
+
 ---
 
-© 2026 Lilliane Nguyen. All rights reserved.
+<div align="center">
+
+© 2026 Lilliane Nguyen · All Rights Reserved · [www.lilgrant.com](https://www.lilgrant.com)
+
+*Proprietary software — no reproduction or reuse permitted without written consent.*
+
+</div>
