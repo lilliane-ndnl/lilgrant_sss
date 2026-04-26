@@ -1,4 +1,5 @@
 import { db } from '@/api/base44Client';
+import { scoreCollege, categorizeResults, calculateNetCost, filterByBudget } from '@/lib/filterEngine';
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
@@ -60,12 +61,6 @@ const STEP_TITLES = [
   "Strategy","Dream Schools",
 ];
 const TOTAL_STEPS = STEP_TITLES.length;
-
-const STRATEGY_DIST = {
-  ambitious: { reach: 4, match: 5, safety: 3 },
-  balanced:  { reach: 3, match: 7, safety: 4 },
-  safe:      { reach: 2, match: 6, safety: 5 },
-};
 
 // ─── UI Components ────────────────────────────────────────────────────────────
 
@@ -131,136 +126,23 @@ function SectionLabel({ children }) {
 
 // ─── Scoring ─────────────────────────────────────────────────────────────────
 
-function getRegionForState(state) {
-  return REGIONS.find(r => r.states.includes(state))?.key || null;
-}
-
-function getSizeKey(enrollment) {
-  if (!enrollment) return null;
-  if (enrollment < 5000)  return "small";
-  if (enrollment < 15000) return "medium";
-  if (enrollment < 30000) return "large";
-  return "very_large";
-}
-
-function scoreCollege(college, prefs) {
-  let score = 0;
-  let academicFit = "MATCH";
-
-  // ── 1. Budget (40 pts) ───────────────────────────────────────────────────
-  const cost = college.avg_coa_after_aid ?? college.avg_annual_cost ?? college.tuition_out_of_state ?? null;
-
-  if (prefs.maxBudget === null) {
-    score += 40;
-  } else if (cost) {
-    if (cost <= prefs.maxBudget)           score += 40;
-    else if (cost <= prefs.maxBudget * 1.1) score += 20;
-    else if (cost > prefs.maxBudget * 1.2)  return null; // hard exclude
-    else                                    score += 10;
-  } else {
-    score += 20; // no cost data, neutral
-  }
-
-  // ── 2. Academic fit (30 pts) ──────────────────────────────────────────────
-  const studentSAT = prefs.testType === "SAT" ? Number(prefs.sat) || 0 : 0;
-  const studentACT = prefs.testType === "ACT" ? Number(prefs.act) || 0 : 0;
-  const sat25 = (college.sat_math_25 || 0) + (college.sat_reading_25 || 0);
-  const sat75 = (college.sat_math_75 || 0) + (college.sat_reading_75 || 0);
-  const ar    = college.acceptance_rate || 0.5;
-
-  if (prefs.testType === "Test-Optional" || (!studentSAT && !studentACT)) {
-    if (ar > 0.5)       { academicFit = "SAFETY"; score += 30; }
-    else if (ar >= 0.2) { academicFit = "MATCH";  score += 20; }
-    else                { academicFit = "REACH";  score += 10; }
-  } else if (studentSAT) {
-    if (sat25 && sat75) {
-      if (studentSAT > sat75)      { academicFit = "SAFETY"; score += 30; }
-      else if (studentSAT >= sat25){ academicFit = "MATCH";  score += 20; }
-      else                         { academicFit = "REACH";  score += 10; }
-    } else {
-      if (ar > 0.5)       { academicFit = "SAFETY"; score += 30; }
-      else if (ar >= 0.2) { academicFit = "MATCH";  score += 20; }
-      else                { academicFit = "REACH";  score += 10; }
-    }
-  } else if (studentACT && college.act_25 && college.act_75) {
-    if (studentACT > college.act_75)      { academicFit = "SAFETY"; score += 30; }
-    else if (studentACT >= college.act_25){ academicFit = "MATCH";  score += 20; }
-    else                                  { academicFit = "REACH";  score += 10; }
-  } else {
-    if (ar > 0.5)       { academicFit = "SAFETY"; score += 30; }
-    else if (ar >= 0.2) { academicFit = "MATCH";  score += 20; }
-    else                { academicFit = "REACH";  score += 10; }
-  }
-
-  // ── 3. Preferences (20 pts) ───────────────────────────────────────────────
-  // Region
-  if (!prefs.regions.length) {
-    score += 5;
-  } else {
-    const r = getRegionForState(college.state);
-    if (r && prefs.regions.includes(r)) score += 5;
-  }
-  // Size
-  if (!prefs.sizes.length) {
-    score += 5;
-  } else {
-    if (prefs.sizes.includes(getSizeKey(college.undergrad_enrollment))) score += 5;
-  }
-  // Setting
-  if (!prefs.settings.length) {
-    score += 5;
-  } else {
-    const settingMatch = prefs.settings.some(s =>
-      college.setting?.toLowerCase().includes(s.toLowerCase())
-    );
-    if (settingMatch) score += 5;
-  }
-  // Major
-  if (!prefs.majors.length) {
-    score += 5;
-  } else {
-    const majorMatch = prefs.majors.some(m =>
-      college.popular_programs?.some(p =>
-        p?.toLowerCase().includes(m.split(" ")[0].toLowerCase())
-      )
-    );
-    if (majorMatch) score += 5;
-  }
-
-  // ── 4. Intl bonus (10 pts) ────────────────────────────────────────────────
-  if (prefs.isInternational) {
-    if (college.avg_aid_intl > 0)          score += 5;
-    if (college.meets_full_need === "Yes")  score += 3;
-    if (college.pct_intl_receiving_aid > 0.3) score += 2;
-  }
-
-  return { score: Math.min(score, 100), academicFit };
-}
-
 function buildResults(colleges, prefs) {
   const dreamIds = new Set(prefs.dreamSchools);
-  const dist     = STRATEGY_DIST[prefs.strategy] || STRATEGY_DIST.balanced;
+  const nonDream = colleges.filter(c => !dreamIds.has(c.id));
+  const inBudget = filterByBudget(nonDream, prefs.maxBudget);
 
-  const reach = [], match = [], safety = [];
-
-  for (const c of colleges) {
-    if (dreamIds.has(c.id)) continue;
+  const scored = inBudget.map(c => {
     const res = scoreCollege(c, prefs);
-    if (!res) continue;
-    const entry = { college: c, score: res.score, academicFit: res.academicFit };
-    if (res.academicFit === "REACH")  reach.push(entry);
-    else if (res.academicFit === "MATCH")  match.push(entry);
-    else                              safety.push(entry);
-  }
+    return { college: c, score: res.score, academicFit: res.academicFit };
+  });
 
-  const byScore = (a, b) => b.score - a.score;
-  reach.sort(byScore); match.sort(byScore); safety.sort(byScore);
+  const { reach, match, safety } = categorizeResults(scored, prefs.strategy);
 
   return {
     dreamSchools: prefs.dreamSchools.map(id => colleges.find(c => c.id === id)).filter(Boolean),
-    reach:  reach.slice(0, dist.reach),
-    match:  match.slice(0, dist.match),
-    safety: safety.slice(0, dist.safety),
+    reach,
+    match,
+    safety,
   };
 }
 
@@ -395,7 +277,7 @@ function DreamSchoolSearch({ colleges, selected, onChange }) {
 // ─── Result Card ─────────────────────────────────────────────────────────────
 
 function ResultCard({ college, category, score, isIntl }) {
-  const cost = college.avg_coa_after_aid ?? college.avg_annual_cost ?? college.tuition_out_of_state ?? null;
+  const cost = calculateNetCost(college);
 
   const accent =
     category === "dream"  ? "rgba(252,211,77,1)"    :

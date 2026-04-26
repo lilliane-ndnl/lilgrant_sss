@@ -1,29 +1,7 @@
 import collegesData from '@/data/colleges-2026-04-24.json'
+import { meetsMinimumDataQuality } from '@/lib/filterEngine'
 
 let colleges = collegesData
-
-function meetsMinimumDataQuality(c) {
-  // Always keep ranked schools regardless of data completeness
-  if (c.us_news_rank && c.us_news_rank < 2000) return true
-
-  // Always keep need-blind or schools with intl aid data
-  if (c.need_blind_intl === true) return true
-  if (c.need_blind_us === true) return true
-  if (c.avg_aid_intl && parseFloat(c.avg_aid_intl) > 0) return true
-
-  // Acceptance rate is MANDATORY for all other schools
-  if (c.acceptance_rate == null) return false
-
-  // Plus at least 2 more of these 4 fields:
-  const score = [
-    (c.tuition_out_of_state != null || c.avg_annual_cost != null),
-    c.graduation_rate != null,
-    c.undergrad_enrollment != null && c.undergrad_enrollment > 0,
-    c.median_earnings_10yr != null,
-  ].filter(Boolean).length
-
-  return score >= 2
-}
 
 console.log(`LilGrant DB: ${collegesData.filter(meetsMinimumDataQuality).length} quality schools loaded (${collegesData.length} total)`)
 

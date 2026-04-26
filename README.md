@@ -13,6 +13,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Netlify](https://img.shields.io/badge/Deployed-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.lilgrant.com)
+[![Tests](https://img.shields.io/badge/Tests-44%2F44_Passing-brightgreen?style=for-the-badge&logo=vitest)](./src/tests/)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
 
 <br/>
@@ -119,6 +120,78 @@ The college dataset was assembled from multiple public sources through a custom 
 2. **Common Data Set (Section H)** — international aid amounts, % receiving aid, aid type per institution
 3. **US News Rankings (2026)** — National Universities + Liberal Arts Colleges
 4. **Manual verification** — need-blind/need-aware status, scholarship details, `intl_tags` for nuanced warnings
+
+---
+
+## 🧪 Testing & Data Integrity
+
+LilGrant treats financial aid data as high-stakes information — a wrong number could send a student to the wrong school. The core filtering and scoring engine is covered by a unit test suite built with Vitest.
+
+### Run Tests
+```bash
+npm run test        # watch mode
+npm run test:run    # single run with coverage
+```
+
+### What's Tested
+| Module | Tests | Purpose |
+|---|---|---|
+| `filterEngine.js` | 36 tests | Budget filtering, scoring algorithm, categorization, formatting |
+| `dataValidator.js` | 8 tests | Data quality checks, duplicate detection |
+| **Total** | **44 / 44 passing** | |
+
+### Data Validation
+A dedicated validator runs against the full 2,200+ school dataset and flags:
+- Acceptance rates outside 0–1 range
+- Aid amounts exceeding total cost of attendance
+- Suspiciously low graduation rates
+- Duplicate school entries
+
+---
+
+## 🔬 Data Methodology
+
+LilGrant's dataset was assembled through a multi-source enrichment pipeline — not a single API call.
+
+### Sources & Trust Hierarchy
+
+| Priority | Source | Data Points | Schools |
+|---|---|---|---|
+| 1 (Primary) | College Scorecard API (IPEDS) | Tuition, enrollment, test scores, earnings, demographics | 2,262 |
+| 2 | Common Data Set (Section H) — manual research | Intl aid amounts, % receiving aid, aid type, scholarship details | 682 |
+| 3 | US News Rankings 2026 | NU + LAC rankings | 351 |
+| 4 | Common App member list | Application requirements, deadlines, fees | 1,051 |
+| 5 | Manual verification | Need-blind/need-aware status, scholarship URLs | 11 need-blind intl |
+
+### Why Manual Research for International Aid?
+
+No public API provides international student financial aid data. The 682-school international aid dataset was built by:
+
+1. Cross-referencing each school's Common Data Set (Section H)
+2. Verifying against institutional financial aid pages
+3. Flagging discrepancies with a `data_source` field per record
+4. Timestamping each record with `intl_data_updated` for transparency on data freshness
+
+### Honest Data Gaps
+
+LilGrant displays `—` (not `N/A`) when data is genuinely unavailable, and links directly to the school's financial aid page so students can verify themselves. Schools without acceptance rate data are excluded from browsing (but retained in the database) to prevent misleading "open admission" schools from appearing in filtered results.
+
+---
+
+## 🗺️ Roadmap
+
+| Status | Feature |
+|---|---|
+| ✅ Live | University Hub with 2,200+ schools |
+| ✅ Live | International aid data for 682 schools |
+| ✅ Live | College List Builder (11-step wizard) |
+| ✅ Live | US News Rankings engine |
+| ✅ Live | Golden Gate curated collections |
+| ✅ Live | Unit test suite (Vitest — 44 tests passing) |
+| 🔄 In Progress | Hero images via Wikipedia API |
+| 📋 Planned | Scholarship database |
+| 📋 Planned | Application profile / extracurricular enhancer |
+| 📋 Planned | Bi-annual data refresh pipeline (March + September) |
 
 ---
 
