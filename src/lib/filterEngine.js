@@ -236,7 +236,7 @@ export function scoreCollege(college, prefs) {
     if (college.need_blind_intl === true)                         intlBonus += 3;
     if ((college.avg_aid_intl || 0) > 0)                          intlBonus += 4;
     if (String(college.meets_full_need || '').startsWith('Yes'))  intlBonus += 2;
-    if ((college.pct_intl_receiving_aid || 0) > 30)               intlBonus += 1;
+    if ((college.pct_intl_receiving_aid || 0) > 0.3)              intlBonus += 1;
   }
 
   const score = Math.min(Math.max(budgetScore + academicScore + prefScore + intlBonus, 0), 100);

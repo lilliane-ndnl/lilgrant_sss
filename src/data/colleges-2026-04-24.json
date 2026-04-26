@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "act_75": null,
     "pct_intl_students": null,
@@ -227,7 +227,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 4995,
     "federal_loan_rate": 0.4814,
-    "pct_part_time": 0.2226
+    "pct_part_time": 0.2226,
+    "scholarship_url": "https://www.spelman.edu/admissions/financial-aid/scholarships",
+    "scholarship_display_name": "Presidential and Dovey Johnson Roundtree Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -3534,7 +3536,9 @@
     "is_hispanic_serving": true,
     "pct_non_resident_alien": 0,
     "federal_loan_rate": 0.75,
-    "pct_part_time": 0.0909
+    "pct_part_time": 0.0909,
+    "scholarship_url": "https://www.depts.ttu.edu/international/scholarships/firstyear-transfer.php",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -5217,7 +5221,9 @@
     "books_supplies_cost": 2600,
     "other_expenses_oncampus": 4000,
     "federal_loan_rate": 0.4458,
-    "pct_part_time": 0.037
+    "pct_part_time": 0.037,
+    "scholarship_url": "https://www.wcu.edu/apply/undergraduate-admissions/costs-and-aid/ncpromise-faq.aspx",
+    "scholarship_display_name": "NC Promise"
   },
   {
     "pct_intl_students": 0,
@@ -5893,7 +5899,9 @@
     "books_supplies_cost": 800,
     "other_expenses_oncampus": 3742,
     "federal_loan_rate": 0.415,
-    "pct_part_time": 0.1196
+    "pct_part_time": 0.1196,
+    "scholarship_url": "https://uwm.edu/undergrad-admission/scholarships-aid/#tab-tuition-other-states-international",
+    "scholarship_display_name": "International Student Scholarship"
   },
   {
     "act_75": 28,
@@ -6422,7 +6430,9 @@
     "books_supplies_cost": 120,
     "other_expenses_oncampus": 2148,
     "federal_loan_rate": 0.4229,
-    "pct_part_time": 0.032
+    "pct_part_time": 0.032,
+    "scholarship_url": "https://www.uwlax.edu/scholarships/scholarships/international-students/",
+    "scholarship_display_name": "I-Engage Scholarship, UWL Foundation scholarships"
   },
   {
     "act_75": 27,
@@ -6536,7 +6546,9 @@
     "books_supplies_cost": 98,
     "other_expenses_oncampus": 3886,
     "federal_loan_rate": 0.4804,
-    "pct_part_time": 0.1676
+    "pct_part_time": 0.1676,
+    "scholarship_url": "https://www.uwstout.edu/academics/international-education/international-student-scholarships",
+    "scholarship_display_name": "#YouAreWelcomeHere Scholarship"
   },
   {
     "act_75": 24,
@@ -7450,7 +7462,9 @@
     "books_supplies_cost": 750,
     "other_expenses_oncampus": 1875,
     "federal_loan_rate": 0.703,
-    "pct_part_time": 0.0116
+    "pct_part_time": 0.0116,
+    "scholarship_url": "https://ripon.edu/international-scholarships/",
+    "scholarship_display_name": "Academic Scholarship"
   },
   {
     "act_75": 25,
@@ -7740,7 +7754,9 @@
     "books_supplies_cost": 720,
     "other_expenses_oncampus": 3439,
     "federal_loan_rate": 0.3838,
-    "pct_part_time": 0.0104
+    "pct_part_time": 0.0104,
+    "scholarship_url": "https://www.marquette.edu/explore/scholarships-global-scholar.php",
+    "scholarship_display_name": "Global Scholar Program"
   },
   {
     "pct_intl_students": 1,
@@ -7938,7 +7954,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 1650,
     "federal_loan_rate": 0.4858,
-    "pct_part_time": 0.0129
+    "pct_part_time": 0.0129,
+    "scholarship_url": "https://www.lawrence.edu/admissions-aid/aid-affordability/scholarships",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "act_75": 28,
@@ -8154,7 +8172,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 4002,
     "federal_loan_rate": 0.5864,
-    "pct_part_time": 0.0333
+    "pct_part_time": 0.0333,
+    "scholarship_url": "https://www.jcu.edu/sefs/financing-jcu-education/new-first-year-sefs/new-first-year-student-scholarships-sefs",
+    "scholarship_display_name": "Magis Scholarship"
   },
   {
     "pct_intl_students": 1,
@@ -8465,7 +8485,9 @@
     "books_supplies_cost": 1154,
     "other_expenses_oncampus": 1588,
     "federal_loan_rate": 0.5369,
-    "pct_part_time": 0.0022
+    "pct_part_time": 0.0022,
+    "scholarship_url": "https://www.beloit.edu/admission/tuition-aid/merit-scholarships/",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 20,
@@ -8837,7 +8859,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 3565,
     "federal_loan_rate": 0.6535,
-    "pct_part_time": 0.0052
+    "pct_part_time": 0.0052,
+    "scholarship_url": "https://www.wesleyancollege.edu/admission/undergraduate/international/internationalscholarships.cfm",
+    "scholarship_display_name": "Open World Scholarship"
   },
   {
     "act_75": 26,
@@ -8955,7 +8979,9 @@
     "books_supplies_cost": 950,
     "other_expenses_oncampus": 6080,
     "federal_loan_rate": 0.4468,
-    "pct_part_time": 0.033
+    "pct_part_time": 0.033,
+    "scholarship_url": "https://financialaid.wvu.edu/home/scholarships/freshmen/non-residents#facts",
+    "scholarship_display_name": "Non-resident scholarship"
   },
   {
     "act_75": 20,
@@ -9525,7 +9551,9 @@
     "books_supplies_cost": 1100,
     "other_expenses_oncampus": 4200,
     "federal_loan_rate": 0.3953,
-    "pct_part_time": 0.0705
+    "pct_part_time": 0.0705,
+    "scholarship_url": "https://www.marshall.edu/sfa/types-of-aid/merit-based/incoming-freshmen-merit-based-scholarships-non-resident-students/",
+    "scholarship_display_name": "John Marshall Scholarship"
   },
   {
     "act_75": 24,
@@ -10005,7 +10033,9 @@
     "books_supplies_cost": 528,
     "other_expenses_oncampus": 3694,
     "federal_loan_rate": 0.557,
-    "pct_part_time": 0.0151
+    "pct_part_time": 0.0151,
+    "scholarship_url": "https://www.whitworth.edu/cms/administration/financial-aid/international-student-scholarship-amounts-criteria/",
+    "scholarship_display_name": "Mind & Heart Scholarship"
   },
   {
     "act_75": 22,
@@ -10294,7 +10324,9 @@
     "books_supplies_cost": 1400,
     "other_expenses_oncampus": 800,
     "federal_loan_rate": 0.5356,
-    "pct_part_time": 0.0144
+    "pct_part_time": 0.0144,
+    "scholarship_url": "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/international-and-daca-students",
+    "scholarship_display_name": "Whitman Merit Scholarship"
   },
   {
     "pct_intl_students": 10,
@@ -10492,7 +10524,9 @@
     "books_supplies_cost": 1224,
     "other_expenses_oncampus": 4722,
     "federal_loan_rate": 0.2921,
-    "pct_part_time": 0.0887
+    "pct_part_time": 0.0887,
+    "scholarship_url": "https://admissions.wwu.edu/international/tuition-scholarships",
+    "scholarship_display_name": "International Achievement Award"
   },
   {
     "pct_intl_students": 12,
@@ -10701,7 +10735,9 @@
     "books_supplies_cost": 762,
     "other_expenses_oncampus": 3444,
     "federal_loan_rate": 0.3031,
-    "pct_part_time": 0.1021
+    "pct_part_time": 0.1021,
+    "scholarship_url": "https://ip.wsu.edu/future-students/tuition-fees/scholarships-funding/#int-academic",
+    "scholarship_display_name": "International Academic Awards"
   },
   {
     "act_75": 30,
@@ -10819,7 +10855,9 @@
     "books_supplies_cost": 792,
     "other_expenses_oncampus": 1913,
     "federal_loan_rate": 0.4939,
-    "pct_part_time": 0.0236
+    "pct_part_time": 0.0236,
+    "scholarship_url": "https://www.seattleu.edu/undergraduate-admissions/finances/scholarships/firstyear/",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "act_75": 28,
@@ -10937,7 +10975,9 @@
     "books_supplies_cost": 785,
     "other_expenses_oncampus": 2745,
     "federal_loan_rate": 0.4421,
-    "pct_part_time": 0.02
+    "pct_part_time": 0.02,
+    "scholarship_url": "https://www.plu.edu/admission-international/cost-scholarship/international-scholarships-and-grants/",
+    "scholarship_display_name": "President's Scholarship"
   },
   {
     "pct_intl_students": 7,
@@ -11353,7 +11393,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 3544,
     "federal_loan_rate": 0.4314,
-    "pct_part_time": 0.0119
+    "pct_part_time": 0.0119,
+    "scholarship_url": "https://www.pugetsound.edu/admission/cost-aid/types-aid/scholarships-grants",
+    "scholarship_display_name": "Lillis Foundation Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -11730,7 +11772,9 @@
     "books_supplies_cost": 1124,
     "other_expenses_oncampus": 4359,
     "federal_loan_rate": 0.3556,
-    "pct_part_time": 0.0117
+    "pct_part_time": 0.0117,
+    "scholarship_url": "https://www.gonzaga.edu/undergraduate-admission/tuition-aid/scholarship-opportunities",
+    "scholarship_display_name": "First-Year Merit Scholarship"
   },
   {
     "act_75": 29,
@@ -11949,7 +11993,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 6344,
     "federal_loan_rate": 0.3878,
-    "pct_part_time": 0.1033
+    "pct_part_time": 0.1033,
+    "scholarship_url": "https://admissions.vcu.edu/cost-aid/scholarships-funding/first-year-scholarships/",
+    "scholarship_display_name": "Presidential Scholarship + Out-of-State Scholarship"
   },
   {
     "act_75": 31,
@@ -12067,7 +12113,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2206,
     "federal_loan_rate": 0.5756,
-    "pct_part_time": 0.0082
+    "pct_part_time": 0.0082,
+    "scholarship_url": "https://www.smcvt.edu/admission-aid/applysmc/international-scholarships/",
+    "scholarship_display_name": "International Student Scholarship"
   },
   {
     "act_75": 28,
@@ -12367,7 +12415,9 @@
     "books_supplies_cost": 1320,
     "other_expenses_oncampus": 2648,
     "federal_loan_rate": 0.3743,
-    "pct_part_time": 0.0249
+    "pct_part_time": 0.0249,
+    "scholarship_url": "https://www.uvm.edu/studentfinancialservices/scholarships_prospective_out_of_state_resident_students",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 29,
@@ -13024,7 +13074,9 @@
     "books_supplies_cost": 392,
     "other_expenses_oncampus": 4464,
     "federal_loan_rate": 0.1078,
-    "pct_part_time": 0.0851
+    "pct_part_time": 0.0851,
+    "scholarship_url": "https://enrollment.byu.edu/financial-aid/new-freshman-scholarships",
+    "scholarship_display_name": "Russell M. Nelson Scholarship"
   },
   {
     "act_75": 25,
@@ -13304,7 +13356,9 @@
     "books_supplies_cost": 1240,
     "other_expenses_oncampus": 9700,
     "federal_loan_rate": 0.2051,
-    "pct_part_time": 0.1319
+    "pct_part_time": 0.1319,
+    "scholarship_url": "https://isss.utah.edu/current-students/scholarship/nagoya-scholarship.php",
+    "scholarship_display_name": "Nagoya Scholarship"
   },
   {
     "pct_intl_students": 3,
@@ -13610,7 +13664,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 3914,
     "federal_loan_rate": 0.3308,
-    "pct_part_time": 0.1408
+    "pct_part_time": 0.1408,
+    "scholarship_url": "https://provost.utdallas.edu/the-mcdermott-programs/mcdermott-scholars/eugene-mcdermott-scholars-program-faqs/",
+    "scholarship_display_name": "McDermott Scholars Program"
   },
   {
     "pct_intl_students": 6,
@@ -14869,7 +14925,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 4948,
     "federal_loan_rate": 0.4038,
-    "pct_part_time": 0.1248
+    "pct_part_time": 0.1248,
+    "scholarship_url": "https://www.usd.edu/Admissions-and-Aid/Tuition-and-Costs/International-Tuition-and-Costs",
+    "scholarship_display_name": "Coyote Beginnings Scholarship"
   },
   {
     "act_75": 24,
@@ -15058,7 +15116,9 @@
     "books_supplies_cost": 1900,
     "other_expenses_oncampus": 5000,
     "federal_loan_rate": 0.4037,
-    "pct_part_time": 0.1338
+    "pct_part_time": 0.1338,
+    "scholarship_url": "https://www.sdsmt.edu/Admissions/International-Students/Costs-and-Fees/",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -15430,7 +15490,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 6377,
     "federal_loan_rate": 0.3397,
-    "pct_part_time": 0.2289
+    "pct_part_time": 0.2289,
+    "scholarship_url": "https://www.ndsu.edu/international/apply/scholarships/",
+    "scholarship_display_name": "International Student Scholarship"
   },
   {
     "pct_intl_students": 3,
@@ -15507,7 +15569,9 @@
     "pct_first_generation": 0.5379245283,
     "books_supplies_cost": 0,
     "federal_loan_rate": 0.5359,
-    "pct_part_time": 0.8835
+    "pct_part_time": 0.8835,
+    "scholarship_url": "https://www.american.edu/admissions/international/au-egls-apply.cfm",
+    "scholarship_display_name": "Emerging Global Leader"
   },
   {
     "pct_intl_students": 3,
@@ -15588,7 +15652,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 1850,
     "federal_loan_rate": 0.7275,
-    "pct_part_time": 0.0388
+    "pct_part_time": 0.0388,
+    "scholarship_url": "https://www.wesleyan.edu/admission/afford-aid/freeman.html",
+    "scholarship_display_name": "Freeman Asian Scholars Program"
   },
   {
     "act_75": 25,
@@ -16091,7 +16157,9 @@
     "books_supplies_cost": 1307,
     "other_expenses_oncampus": 2769,
     "federal_loan_rate": 0.4079,
-    "pct_part_time": 0.0061
+    "pct_part_time": 0.0061,
+    "scholarship_url": "https://www.wofford.edu/admission/scholarships/richardson-family-scholarship",
+    "scholarship_display_name": "Richardson Family Scholarship"
   },
   {
     "act_75": 27,
@@ -16209,7 +16277,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 5944,
     "federal_loan_rate": 0.5432,
-    "pct_part_time": 0.0517
+    "pct_part_time": 0.0517,
+    "scholarship_url": "https://www.winthrop.edu/international/scholarships.aspx",
+    "scholarship_display_name": "Winthrop Premier Scholarship"
   },
   {
     "pct_intl_students": 8,
@@ -16506,7 +16576,9 @@
     "teacher_recs_required": null,
     "other_recs_required": null,
     "mid_year_report": false,
-    "counselor_rec_required": false
+    "counselor_rec_required": false,
+    "scholarship_url": "https://sc.edu/about/offices_and_divisions/international_student_and_scholar_support/new-student-arrival/understand_tuition_and_fees/university_scholarships_and_assistantships/index.php",
+    "scholarship_display_name": "Sister State Agreement"
   },
   {
     "act_75": 26,
@@ -16624,7 +16696,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 4264,
     "federal_loan_rate": 0.567,
-    "pct_part_time": 0.0354
+    "pct_part_time": 0.0354,
+    "scholarship_url": "https://www.coastal.edu/admissions/meritawardsintl/",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -17034,7 +17108,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 3050,
     "federal_loan_rate": 0.7312,
-    "pct_part_time": 0.0162
+    "pct_part_time": 0.0162,
+    "scholarship_url": "https://www.berry.edu/scholarships-and-aid/berry-scholarships",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -17656,7 +17732,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 2400,
     "federal_loan_rate": 0.278,
-    "pct_part_time": 0.0063
+    "pct_part_time": 0.0063,
+    "scholarship_url": "https://www.furman.edu/financial-aid/aid-types/merit-based-scholarships/",
+    "scholarship_display_name": "James B. Duke and Joseph A. Vaughn"
   },
   {
     "pct_intl_students": 0,
@@ -19655,7 +19733,9 @@
     "books_supplies_cost": 1150,
     "other_expenses_oncampus": 1540,
     "federal_loan_rate": 0.5705,
-    "pct_part_time": 0.0158
+    "pct_part_time": 0.0158,
+    "scholarship_url": "https://financial-aid.providence.edu/types-of-assistance/institutional-merit-based/",
+    "scholarship_display_name": "Academic Tuition Scholarship"
   },
   {
     "act_75": 27,
@@ -19874,7 +19954,9 @@
     "books_supplies_cost": 1400,
     "other_expenses_oncampus": 1550,
     "federal_loan_rate": 0.5151,
-    "pct_part_time": 0.0069
+    "pct_part_time": 0.0069,
+    "scholarship_url": "https://www.bryant.edu/admission-bryant/undergraduate-admission/undergraduate-financial-aid-and-tuition/scholarships-grants",
+    "scholarship_display_name": "Academic Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -20191,7 +20273,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 2180,
     "federal_loan_rate": 0.5813,
-    "pct_part_time": 0.0597
+    "pct_part_time": 0.0597,
+    "scholarship_url": "https://www.ycp.edu/admissions/cost-and-financial-aid/scholarships-and-grants/",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -20627,7 +20711,9 @@
     "books_supplies_cost": 710,
     "other_expenses_oncampus": 2300,
     "federal_loan_rate": 0.3499,
-    "pct_part_time": 0.03
+    "pct_part_time": 0.03,
+    "scholarship_url": "https://www1.villanova.edu/university/undergraduate-admission/Financial-Assistance-and-scholarship/merit-based-scholarships.html",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 23,
@@ -20922,7 +21008,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1200,
     "federal_loan_rate": 0.6928,
-    "pct_part_time": 0.0054
+    "pct_part_time": 0.0054,
+    "scholarship_url": "https://www.washjeff.edu/future-students/international-admission/international-student-faq/",
+    "scholarship_display_name": "International Grant"
   },
   {
     "act_75": 30,
@@ -21157,7 +21245,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2322,
     "federal_loan_rate": 0.6542,
-    "pct_part_time": 0.0027
+    "pct_part_time": 0.0027,
+    "scholarship_url": "https://www.ursinus.edu/offices/student-financial-services/grants-scholarships-loans/ursinus-gateway-scholarship/",
+    "scholarship_display_name": "Gateway Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -21439,7 +21529,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 4555,
     "federal_loan_rate": 0.5332,
-    "pct_part_time": 0.0602
+    "pct_part_time": 0.0602,
+    "scholarship_url": "https://payingforcollege.temple.edu/what-financial-aid/financial-aid-offer/scholarships/international-student-scholarships",
+    "scholarship_display_name": "President's Scholar Award"
   },
   {
     "act_75": 35,
@@ -21556,7 +21648,9 @@
     "books_supplies_cost": 760,
     "other_expenses_oncampus": 2134,
     "federal_loan_rate": 0.1064,
-    "pct_part_time": 0.0006
+    "pct_part_time": 0.0006,
+    "scholarship_url": "https://www.swarthmore.edu/mccabe-scholars",
+    "scholarship_display_name": "McCabe Scholarship"
   },
   {
     "act_75": 26,
@@ -21823,7 +21917,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 1850,
     "federal_loan_rate": 0.6591,
-    "pct_part_time": 0.006
+    "pct_part_time": 0.006,
+    "scholarship_url": "https://www.susqu.edu/admission-and-aid/tuition-and-financial-aid/financial-aid-options/scholarships/",
+    "scholarship_display_name": "International Student Merit Scholarship"
   },
   {
     "act_75": 28,
@@ -22275,7 +22371,9 @@
     "books_supplies_cost": 1160,
     "other_expenses_oncampus": 1520,
     "federal_loan_rate": 0.5623,
-    "pct_part_time": 0.0259
+    "pct_part_time": 0.0259,
+    "scholarship_url": "https://www.sju.edu/scholarships",
+    "scholarship_display_name": "John P. McNulty Scholarship for Leadership in Science & Math"
   },
   {
     "act_75": 30,
@@ -22393,7 +22491,9 @@
     "books_supplies_cost": 1300,
     "other_expenses_oncampus": 1872,
     "federal_loan_rate": 0.6386,
-    "pct_part_time": 0.0186
+    "pct_part_time": 0.0186,
+    "scholarship_url": "https://admissions.scranton.edu/financial-aid/scholarships-grants.shtml",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 27,
@@ -22595,7 +22695,9 @@
     "books_supplies_cost": 738,
     "other_expenses_oncampus": 4810,
     "federal_loan_rate": 0.5753,
-    "pct_part_time": 0.0194
+    "pct_part_time": 0.0194,
+    "scholarship_url": "https://financialaid.pitt.edu/types-of-aid/scholarships/",
+    "scholarship_display_name": "International Freshmen Scholarship"
   },
   {
     "pct_intl_students": 4,
@@ -25139,7 +25241,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 2150,
     "federal_loan_rate": 0.5274,
-    "pct_part_time": 0.0133
+    "pct_part_time": 0.0133,
+    "scholarship_url": "https://www.muhlenberg.edu/financialaid/prospectivestudents/merit.html",
+    "scholarship_display_name": "Herny Melchior Muhlenberg Scholarship"
   },
   {
     "act_75": 31,
@@ -25443,7 +25547,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 5358,
     "federal_loan_rate": 0.7493,
-    "pct_part_time": 0.0482
+    "pct_part_time": 0.0482,
+    "scholarship_url": "https://www.moravian.edu/admissions/merit-scholarships",
+    "scholarship_display_name": "Merit Scholarships"
   },
   {
     "act_75": 31,
@@ -26270,7 +26376,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 2270,
     "federal_loan_rate": 0.7107,
-    "pct_part_time": 0.002
+    "pct_part_time": 0.002,
+    "scholarship_url": "https://www.lycoming.edu/financial-aid/scholarship-opportunities.aspx",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -26471,7 +26579,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1150,
     "federal_loan_rate": 0.1961,
-    "pct_part_time": 0.0054
+    "pct_part_time": 0.0054,
+    "scholarship_url": "https://admissions.lafayette.edu/scholarships/",
+    "scholarship_display_name": "Marquis Fellowship"
   },
   {
     "pct_intl_students": 6,
@@ -26683,7 +26793,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 4410,
     "federal_loan_rate": 0.6266,
-    "pct_part_time": 0.0466
+    "pct_part_time": 0.0466,
+    "scholarship_url": "https://www.kutztown.edu/admissions/apply/international-admissions/funding-your-education/international-tuition-waiver.html",
+    "scholarship_display_name": "Sesquicentennial Academic Honors Scholarship"
   },
   {
     "act_75": 22,
@@ -26801,7 +26913,9 @@
     "books_supplies_cost": 1300,
     "other_expenses_oncampus": 8136,
     "federal_loan_rate": 0.1857,
-    "pct_part_time": 0.1105
+    "pct_part_time": 0.1105,
+    "scholarship_url": "https://laroche.edu/LRUscholarships/",
+    "scholarship_display_name": "#YouAreWelcomeHere"
   },
   {
     "pct_intl_students": 2,
@@ -27114,7 +27228,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1250,
     "federal_loan_rate": 0.67,
-    "pct_part_time": 0.0008
+    "pct_part_time": 0.0008,
+    "scholarship_url": "https://www.juniata.edu/academics/departments/international/international-students/financial-aid.php",
+    "scholarship_display_name": "Juniata Provost Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -28043,7 +28159,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2700,
     "federal_loan_rate": 0.4769,
-    "pct_part_time": 0.0029
+    "pct_part_time": 0.0029,
+    "scholarship_url": "https://www.gettysburg.edu/admissions-aid/financial-aid-options/scholarships",
+    "scholarship_display_name": "Eisenhower Scholarship"
   },
   {
     "act_75": 33,
@@ -28160,7 +28278,9 @@
     "books_supplies_cost": 800,
     "other_expenses_oncampus": 1350,
     "federal_loan_rate": 0.4448,
-    "pct_part_time": 0.0028
+    "pct_part_time": 0.0028,
+    "scholarship_url": "https://www.fandm.edu/scholarships/",
+    "scholarship_display_name": "F&M Merit Scholarship"
   },
   {
     "act_75": 31,
@@ -28278,7 +28398,9 @@
     "books_supplies_cost": 1100,
     "other_expenses_oncampus": 1050,
     "federal_loan_rate": 0.6511,
-    "pct_part_time": 0.0498
+    "pct_part_time": 0.0498,
+    "scholarship_url": "https://www.etown.edu/admissions/financial-aid/index.aspx",
+    "scholarship_display_name": "International Student Scholarship"
   },
   {
     "act_75": 23,
@@ -28578,7 +28700,9 @@
     "books_supplies_cost": 1700,
     "other_expenses_oncampus": 1500,
     "federal_loan_rate": 0.4932,
-    "pct_part_time": 0.0704
+    "pct_part_time": 0.0704,
+    "scholarship_url": "https://drexel.edu/drexelcentral/finaid/grants/undergraduate-scholarships/",
+    "scholarship_display_name": "Global Scholars Program"
   },
   {
     "act_75": 32,
@@ -28696,7 +28820,9 @@
     "books_supplies_cost": 1440,
     "other_expenses_oncampus": 4047,
     "federal_loan_rate": 0.6743,
-    "pct_part_time": 0.0116
+    "pct_part_time": 0.0116,
+    "scholarship_url": "https://www.duq.edu/admission-and-aid/paying-for-school/affordability/your-success.php",
+    "scholarship_display_name": "Duquesne Academic Scholarships"
   },
   {
     "act_75": 33,
@@ -28814,7 +28940,9 @@
     "books_supplies_cost": 1324,
     "other_expenses_oncampus": 2018,
     "federal_loan_rate": 0.3852,
-    "pct_part_time": 0.0013
+    "pct_part_time": 0.0013,
+    "scholarship_url": "https://www.dickinson.edu/homepage/511/grants_and_scholarships",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 46,
@@ -29008,7 +29136,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2000,
     "federal_loan_rate": 0.5289,
-    "pct_part_time": 0.0706
+    "pct_part_time": 0.0706,
+    "scholarship_url": "https://www.chatham.edu/admission-and-aid/undergraduate/scholarships-and-grants/index.html",
+    "scholarship_display_name": "Presidential Scholarship and Rachel Carson Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -29416,7 +29546,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 2060,
     "federal_loan_rate": 0.3466,
-    "pct_part_time": 0.0021
+    "pct_part_time": 0.0021,
+    "scholarship_url": "https://www.bucknell.edu/admissions-aid/tuition-fees-financial-aid/scholarship-programs/presidential-fellowships",
+    "scholarship_display_name": "Presidential Fellowships"
   },
   {
     "pct_intl_students": 4,
@@ -29809,7 +29941,9 @@
     "books_supplies_cost": 1485,
     "other_expenses_oncampus": 3477,
     "federal_loan_rate": 0.6384,
-    "pct_part_time": 0.1114
+    "pct_part_time": 0.1114,
+    "scholarship_url": "https://www.desales.edu/admissions-financial-aid/undergraduate-admissions-aid/financial-aid-scholarships/desales-scholarships/leadership-scholarship-(6-full-tuition-scholarships)",
+    "scholarship_display_name": "Leadership Scholarship"
   },
   {
     "act_75": 33,
@@ -30043,7 +30177,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 1100,
     "federal_loan_rate": 0.6148,
-    "pct_part_time": 0.0678
+    "pct_part_time": 0.0678,
+    "scholarship_url": "https://www.arcadia.edu/arcadia-university-admissions/financial-aid/aid-for-undergraduates/",
+    "scholarship_display_name": "Distinguished Scholarship"
   },
   {
     "pct_intl_students": 3,
@@ -30260,7 +30396,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2500,
     "federal_loan_rate": 0.5633,
-    "pct_part_time": 0.0389
+    "pct_part_time": 0.0389,
+    "scholarship_url": "https://sites.allegheny.edu/admissions/scholarships/",
+    "scholarship_display_name": "Trustee Scholarship"
   },
   {
     "pct_intl_students": 3,
@@ -30474,7 +30612,9 @@
     "books_supplies_cost": 1222,
     "other_expenses_oncampus": 2912,
     "federal_loan_rate": 0.3934,
-    "pct_part_time": 0.0088
+    "pct_part_time": 0.0088,
+    "scholarship_url": "https://willamette.edu/offices/finaid/undergraduate-students/scholarships/willamette-scholarships/index.html",
+    "scholarship_display_name": "Merit Scholarship plus other competitive scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -31481,7 +31621,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2500,
     "federal_loan_rate": 0.505,
-    "pct_part_time": 0.0017
+    "pct_part_time": 0.0017,
+    "scholarship_url": "https://denison.edu/campus/finances/types-of-scholarships-aid",
+    "scholarship_display_name": "Not specified"
   },
   {
     "pct_intl_students": 0,
@@ -31694,7 +31836,9 @@
     "books_supplies_cost": 850,
     "other_expenses_oncampus": 3570,
     "federal_loan_rate": 0.5485,
-    "pct_part_time": 0.016
+    "pct_part_time": 0.016,
+    "scholarship_url": "https://www.meredith.edu/full-ride-scholarship/",
+    "scholarship_display_name": "Meredith Full-Ride Merit Scholarship"
   },
   {
     "act_75": 24,
@@ -32746,7 +32890,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 2250,
     "federal_loan_rate": 0.4111,
-    "pct_part_time": 0.0053
+    "pct_part_time": 0.0053,
+    "scholarship_url": "https://www.highpoint.edu/admissions/international-students/",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "act_75": 24,
@@ -32864,7 +33010,9 @@
     "books_supplies_cost": 1800,
     "other_expenses_oncampus": 1500,
     "federal_loan_rate": 0.5069,
-    "pct_part_time": 0.016
+    "pct_part_time": 0.016,
+    "scholarship_url": "https://www.guilford.edu/admissions/financial-aid/scholarships-and-grants",
+    "scholarship_display_name": "Nathan Hunt Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -33078,7 +33226,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 2600,
     "federal_loan_rate": 0.2447,
-    "pct_part_time": 0.0277
+    "pct_part_time": 0.0277,
+    "scholarship_url": "https://www.elon.edu/u/admissions/undergraduate/financial-aid/scholarships/merit-based-scholarships/",
+    "scholarship_display_name": "International Scholar Award"
   },
   {
     "act_75": 19,
@@ -33196,7 +33346,9 @@
     "books_supplies_cost": 372,
     "other_expenses_oncampus": 2784,
     "federal_loan_rate": 0.4597,
-    "pct_part_time": 0.2435
+    "pct_part_time": 0.2435,
+    "scholarship_url": "https://www.uncfsu.edu/admission-and-aid/nc-promise",
+    "scholarship_display_name": "NC Promise"
   },
   {
     "act_75": 22,
@@ -33314,7 +33466,9 @@
     "books_supplies_cost": 720,
     "other_expenses_oncampus": 1701,
     "federal_loan_rate": 0.5396,
-    "pct_part_time": 0.0906
+    "pct_part_time": 0.0906,
+    "scholarship_url": "https://www.ecsu.edu/nc-promise/index.php#:~:text=This%2520includes%2520both%2520new%2520and,take%2520advantage%2520of%2520NC%2520Promise.",
+    "scholarship_display_name": "NC Promise"
   },
   {
     "act_75": 26,
@@ -33550,7 +33704,9 @@
     "books_supplies_cost": 1400,
     "other_expenses_oncampus": 4190,
     "federal_loan_rate": 0.5318,
-    "pct_part_time": 0.0713
+    "pct_part_time": 0.0713,
+    "scholarship_url": "https://catawba.edu/catawbascholars/",
+    "scholarship_display_name": "Socratic, Spirit of Catawba, Hobgood Scholarships"
   },
   {
     "pct_intl_students": 9,
@@ -33763,7 +33919,9 @@
     "books_supplies_cost": 825,
     "other_expenses_oncampus": 1925,
     "federal_loan_rate": 0.0867,
-    "pct_part_time": 0
+    "pct_part_time": 0,
+    "scholarship_url": "https://www.davidson.edu/admission-and-financial-aid/financial-aid/types-financial-aid/scholarships/nomination-scholarships",
+    "scholarship_display_name": "William Holt Terry Scholarship and Berk Scholarship"
   },
   {
     "act_75": 26,
@@ -34282,7 +34440,9 @@
     "books_supplies_cost": 800,
     "other_expenses_oncampus": 2816,
     "federal_loan_rate": 0.366,
-    "pct_part_time": 0.0692
+    "pct_part_time": 0.0692,
+    "scholarship_url": "https://international.appstate.edu/scholarships/international-student-scholarships",
+    "scholarship_display_name": "International Student Scholarship"
   },
   {
     "act_75": 26,
@@ -34721,7 +34881,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 5400,
     "federal_loan_rate": 0.1607,
-    "pct_part_time": 0.0105
+    "pct_part_time": 0.0105,
+    "scholarship_url": "https://go.yu.edu/merit-scholarships",
+    "scholarship_display_name": "Distinguished Honors Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -36616,7 +36778,9 @@
     "books_supplies_cost": 1753,
     "other_expenses_oncampus": 2024,
     "federal_loan_rate": 0.3242,
-    "pct_part_time": 0.0333
+    "pct_part_time": 0.0333,
+    "scholarship_url": "https://financialaid.syr.edu/scholarships/su/merit-based-scholarships-for-international-students/",
+    "scholarship_display_name": "Full Tuition 1870 Scholarship"
   },
   {
     "pct_intl_students": 1,
@@ -38699,7 +38863,9 @@
     "teacher_recs_required": null,
     "other_recs_required": null,
     "mid_year_report": false,
-    "counselor_rec_required": false
+    "counselor_rec_required": false,
+    "scholarship_url": "https://www.buffalo.edu/internationaladmissions/learn-about-ub/affordable-costs-and-funding-opportunities/scholarships-funding.html",
+    "scholarship_display_name": "Flagship Scholarship"
   },
   {
     "act_75": 32,
@@ -38817,7 +38983,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1000,
     "federal_loan_rate": 0.3942,
-    "pct_part_time": 0.023
+    "pct_part_time": 0.023,
+    "scholarship_url": "https://www.binghamton.edu/financial-aid/types-of-aid/scholarships/index.html",
+    "scholarship_display_name": "International Student Scholarships"
   },
   {
     "act_75": 29,
@@ -38920,7 +39088,9 @@
     "books_supplies_cost": 800,
     "other_expenses_oncampus": 3072,
     "federal_loan_rate": 0.2752,
-    "pct_part_time": 0.0167
+    "pct_part_time": 0.0167,
+    "scholarship_url": "https://www.stjohns.edu/admission/international-admission",
+    "scholarship_display_name": "International Merit Scholarship"
   },
   {
     "act_75": 28,
@@ -39724,7 +39894,9 @@
     "books_supplies_cost": 1303,
     "other_expenses_oncampus": 2540,
     "federal_loan_rate": 0.6601,
-    "pct_part_time": 0.0229
+    "pct_part_time": 0.0229,
+    "scholarship_url": "https://www.siena.edu/afford/scholarships/",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 33,
@@ -39841,7 +40013,9 @@
     "books_supplies_cost": 1300,
     "other_expenses_oncampus": 1630,
     "federal_loan_rate": 0.3303,
-    "pct_part_time": 0.0097
+    "pct_part_time": 0.0097,
+    "scholarship_url": "https://www.skidmore.edu/financialaid/freshmen_faq.php",
+    "scholarship_display_name": "STEM subjects"
   },
   {
     "act_75": 34,
@@ -39959,7 +40133,9 @@
     "books_supplies_cost": 1310,
     "other_expenses_oncampus": 1380,
     "federal_loan_rate": 0.3974,
-    "pct_part_time": 0.033
+    "pct_part_time": 0.033,
+    "scholarship_url": "https://www.rochester.edu/financial-aid/scholarships/",
+    "scholarship_display_name": "Handler Scholarship"
   },
   {
     "pct_intl_students": 1,
@@ -40189,7 +40365,9 @@
     "books_supplies_cost": 750,
     "other_expenses_oncampus": 900,
     "federal_loan_rate": 0.5398,
-    "pct_part_time": 0.001
+    "pct_part_time": 0.001,
+    "scholarship_url": "https://www.stlawu.edu/admissions/financial-aid-scholarships/financial-aid/financial-aid-international-students",
+    "scholarship_display_name": "International Scholarships"
   },
   {
     "act_75": 30,
@@ -40579,7 +40757,9 @@
     "books_supplies_cost": 1100,
     "other_expenses_oncampus": 1700,
     "federal_loan_rate": 0.5291,
-    "pct_part_time": 0.0235
+    "pct_part_time": 0.0235,
+    "scholarship_url": "https://www.rit.edu/admissions/aid/merit-based-scholarships",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "pct_intl_students": 3,
@@ -40869,7 +41049,9 @@
     "books_supplies_cost": 1350,
     "other_expenses_oncampus": 1740,
     "federal_loan_rate": 0.5099,
-    "pct_part_time": 0.0086
+    "pct_part_time": 0.0086,
+    "scholarship_url": "https://admissions.rpi.edu/aid/scholarships-and-grants",
+    "scholarship_display_name": "Rensselaer Medal"
   },
   {
     "pct_intl_students": 0,
@@ -41428,7 +41610,9 @@
     "books_supplies_cost": 1512,
     "other_expenses_oncampus": 4570,
     "federal_loan_rate": 0.4462,
-    "pct_part_time": 0.082
+    "pct_part_time": 0.082,
+    "scholarship_url": "https://www.nyit.edu/admissions/nyit_international_leadership_scholarship_application",
+    "scholarship_display_name": "International Leadership Scholarship"
   },
   {
     "act_75": 28,
@@ -42319,7 +42503,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 6500,
     "federal_loan_rate": 0.7112,
-    "pct_part_time": 0.1034
+    "pct_part_time": 0.1034,
+    "scholarship_url": "https://manhattan.edu/admissions/undergraduate/requirements/international.php",
+    "scholarship_display_name": "merit scholarships"
   },
   {
     "act_75": 31,
@@ -43486,7 +43672,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 2700,
     "federal_loan_rate": 0.6194,
-    "pct_part_time": 0.0944
+    "pct_part_time": 0.0944,
+    "scholarship_url": "https://www.coe.edu/admission/first-year-students/scholarships-awards",
+    "scholarship_display_name": "Distinguished Trustee Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -43703,7 +43891,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1850,
     "federal_loan_rate": 0.4375,
-    "pct_part_time": 0.0061
+    "pct_part_time": 0.0061,
+    "scholarship_url": "https://www.iona.edu/offices/student-financial-services/types-aid/scholarships-and-grants/iona-university-awards",
+    "scholarship_display_name": "President's Scholarship"
   },
   {
     "act_75": 32,
@@ -43821,7 +44011,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2050,
     "federal_loan_rate": 0.4434,
-    "pct_part_time": 0.0316
+    "pct_part_time": 0.0316,
+    "scholarship_url": "https://www.hofstra.edu/admission/scholarship-opportunities.html",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 31,
@@ -44028,7 +44220,9 @@
     "books_supplies_cost": 850,
     "other_expenses_oncampus": 1365,
     "federal_loan_rate": 0.6451,
-    "pct_part_time": 0.0099
+    "pct_part_time": 0.0099,
+    "scholarship_url": "https://www.ithaca.edu/tuition-financial-aid/financial-aid-basics/scholarships/ithaca-scholarships-new-students",
+    "scholarship_display_name": "Leadership Scholar Program"
   },
   {
     "act_75": 32,
@@ -44134,7 +44328,9 @@
     "teacher_recs_required": null,
     "other_recs_required": null,
     "mid_year_report": true,
-    "counselor_rec_required": true
+    "counselor_rec_required": true,
+    "scholarship_url": "https://www.hws.edu/admissions/tuition-scholarships-and-aid/merit-based-awards.aspx",
+    "scholarship_display_name": "Unspecified"
   },
   {
     "pct_intl_students": 1,
@@ -44448,7 +44644,9 @@
     "books_supplies_cost": 1590,
     "other_expenses_oncampus": 3520,
     "federal_loan_rate": 0.4741,
-    "pct_part_time": 0.0391
+    "pct_part_time": 0.0391,
+    "scholarship_url": "https://www.fordham.edu/undergraduate-financial-aid/types-of-financial-aid/fordham-scholarships-and-grants/international-student-scholarships/",
+    "scholarship_display_name": "Cunniffe Presidential Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -47488,7 +47686,9 @@
     "books_supplies_cost": 1020,
     "other_expenses_oncampus": 3496,
     "federal_loan_rate": 0.5865,
-    "pct_part_time": 0.0279
+    "pct_part_time": 0.0279,
+    "scholarship_url": "https://www.adelphi.edu/aid/scholarships/institutional/undergraduate/",
+    "scholarship_display_name": "Presidential Award + #YouAreWelcomeHere"
   },
   {
     "pct_intl_students": 0,
@@ -47904,7 +48104,9 @@
     "books_supplies_cost": 1764,
     "other_expenses_oncampus": 5000,
     "federal_loan_rate": 0.4408,
-    "pct_part_time": 0.177
+    "pct_part_time": 0.177,
+    "scholarship_url": "https://international.unm.edu/misc/scholarship-and-cost-of-attendance.html",
+    "scholarship_display_name": "International Amigo Scholarship"
   },
   {
     "act_75": 24,
@@ -48022,7 +48224,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 4536,
     "federal_loan_rate": 0.1993,
-    "pct_part_time": 0.1513
+    "pct_part_time": 0.1513,
+    "scholarship_url": "https://international.unm.edu/undergraduate/scholarship-and-cost-of-attendance.html",
+    "scholarship_display_name": "International Amigo Scholarship"
   },
   {
     "act_75": 29,
@@ -48670,7 +48874,9 @@
     "books_supplies_cost": 1600,
     "other_expenses_oncampus": 3166,
     "federal_loan_rate": 0.4285,
-    "pct_part_time": 0.2083
+    "pct_part_time": 0.2083,
+    "scholarship_url": "https://www.wpunj.edu/admissions/out-of-state-tuition-waiver.html",
+    "scholarship_display_name": "Out of State Tuition Waiver"
   },
   {
     "pct_intl_students": 8,
@@ -48958,7 +49164,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 1050,
     "federal_loan_rate": 0.5271,
-    "pct_part_time": 0.0152
+    "pct_part_time": 0.0152,
+    "scholarship_url": "https://www.stevens.edu/page-basic/stevens-scholarships",
+    "scholarship_display_name": "Ann P. Neupauer and Global Scholarships"
   },
   {
     "act_75": 25,
@@ -49290,7 +49498,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 3000,
     "federal_loan_rate": 0.5043,
-    "pct_part_time": 0.0212
+    "pct_part_time": 0.0212,
+    "scholarship_url": "https://www.shu.edu/undergraduate-admissions/scholarships.html",
+    "scholarship_display_name": "University Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -49520,7 +49730,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 1900,
     "federal_loan_rate": 0.5829,
-    "pct_part_time": 0.0444
+    "pct_part_time": 0.0444,
+    "scholarship_url": "https://www.rider.edu/tuition-aid/financial-aid/scholarships-grants/first-year/trustee-scholarship",
+    "scholarship_display_name": "Trustee Scholarship"
   },
   {
     "act_75": 33,
@@ -49623,7 +49835,9 @@
     "books_supplies_cost": 1418,
     "other_expenses_oncampus": 4458,
     "federal_loan_rate": 0.3479,
-    "pct_part_time": 0.0313
+    "pct_part_time": 0.0313,
+    "scholarship_url": "https://honorscollege.rutgers.edu/scholarships",
+    "scholarship_display_name": "International Student Scholarship"
   },
   {
     "act_75": 25,
@@ -49726,7 +49940,9 @@
     "books_supplies_cost": 1418,
     "other_expenses_oncampus": 4458,
     "federal_loan_rate": 0.4702,
-    "pct_part_time": 0.1314
+    "pct_part_time": 0.1314,
+    "scholarship_url": "https://admissions.rutgers.edu/international-chancellor-scholarship",
+    "scholarship_display_name": "International Chancellor's Scholarship"
   },
   {
     "act_75": 30,
@@ -49844,7 +50060,9 @@
     "books_supplies_cost": 1226,
     "other_expenses_oncampus": 1742,
     "federal_loan_rate": 0.376,
-    "pct_part_time": 0.0755
+    "pct_part_time": 0.0755,
+    "scholarship_url": "https://www.ramapo.edu/undergraduate/international/",
+    "scholarship_display_name": "Merit Scholarships"
   },
   {
     "pct_intl_students": 1,
@@ -50078,7 +50296,9 @@
     "books_supplies_cost": 3400,
     "other_expenses_oncampus": 5200,
     "federal_loan_rate": 0.3118,
-    "pct_part_time": 0.0702
+    "pct_part_time": 0.0702,
+    "scholarship_url": "https://www.njit.edu/financialaid/merit-based-scholarships",
+    "scholarship_display_name": "Honors Merit Award"
   },
   {
     "act_75": 29,
@@ -50504,7 +50724,9 @@
     "books_supplies_cost": 1330,
     "other_expenses_oncampus": 5627,
     "federal_loan_rate": 0.4337,
-    "pct_part_time": 0.1048
+    "pct_part_time": 0.1048,
+    "scholarship_url": "https://admissions.rowan.edu/admissions-process/international-requirements/scholarships-international-students.html",
+    "scholarship_display_name": "International Scholarship"
   },
   {
     "pct_intl_students": 1,
@@ -50616,7 +50838,9 @@
     "books_supplies_cost": 1240,
     "other_expenses_oncampus": 5812,
     "federal_loan_rate": 0.5463,
-    "pct_part_time": 0.0332
+    "pct_part_time": 0.0332,
+    "scholarship_url": "https://www.fdu.edu/admissions/international/scholarships/",
+    "scholarship_display_name": "International Scholarship"
   },
   {
     "pct_intl_students": 6,
@@ -51199,7 +51423,9 @@
     "books_supplies_cost": 2035,
     "other_expenses_oncampus": 3460,
     "federal_loan_rate": 0.4458,
-    "pct_part_time": 0.0065
+    "pct_part_time": 0.0065,
+    "scholarship_url": "https://drew.edu/academics/undergraduate-studies/honors/",
+    "scholarship_display_name": "Francis Asbury Scholarship"
   },
   {
     "pct_intl_students": 23,
@@ -51558,7 +51784,9 @@
     "pct_first_generation": 0.174486235,
     "books_supplies_cost": 900,
     "federal_loan_rate": 0.3309,
-    "pct_part_time": 0.6724
+    "pct_part_time": 0.6724,
+    "scholarship_url": "https://www.unh.edu/financialaid/types-aid/scholarships",
+    "scholarship_display_name": "Trustee Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -52026,7 +52254,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 3492,
     "federal_loan_rate": 0.6852,
-    "pct_part_time": 0.0086
+    "pct_part_time": 0.0086,
+    "scholarship_url": "https://www.anselm.edu/admission-aid/tuition-financial-aid/types-aid/scholarships-and-grants",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 1,
@@ -52817,7 +53047,9 @@
     "books_supplies_cost": 1240,
     "other_expenses_oncampus": 4372,
     "federal_loan_rate": 0.255,
-    "pct_part_time": 0.1869
+    "pct_part_time": 0.1869,
+    "scholarship_url": "https://www.unlv.edu/finaid/scholarships",
+    "scholarship_display_name": "Signature Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -52929,7 +53161,9 @@
     "books_supplies_cost": 2000,
     "other_expenses_oncampus": 1450,
     "federal_loan_rate": 0.6571,
-    "pct_part_time": 0.0739
+    "pct_part_time": 0.0739,
+    "scholarship_url": "https://colby-sawyer.edu/financial-aid/scholarships-awards",
+    "scholarship_display_name": "Merit scholarship"
   },
   {
     "act_75": 26,
@@ -53047,7 +53281,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 2940,
     "federal_loan_rate": 0.2395,
-    "pct_part_time": 0.1171
+    "pct_part_time": 0.1171,
+    "scholarship_url": "https://www.unr.edu/financial-aid/scholarships/first-year-scholarships",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 6,
@@ -53541,7 +53777,9 @@
     "books_supplies_cost": 1100,
     "other_expenses_oncampus": 3000,
     "federal_loan_rate": 0.3255,
-    "pct_part_time": 0.0411
+    "pct_part_time": 0.0411,
+    "scholarship_url": "https://financialaid.unl.edu/global-laureate-scholarship-guidelines-2022-2023",
+    "scholarship_display_name": "Global Laureate Scholarships"
   },
   {
     "pct_intl_students": 2,
@@ -54242,7 +54480,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 2800,
     "federal_loan_rate": 0.4195,
-    "pct_part_time": 0.0205
+    "pct_part_time": 0.0205,
+    "scholarship_url": "https://www.creighton.edu/admission-aid/admissions-information/scholarships#undergradscholarships",
+    "scholarship_display_name": "Scott Scholarship, Next Generation Leaders"
   },
   {
     "pct_intl_students": 6,
@@ -54662,7 +54902,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 5516,
     "federal_loan_rate": 0.3444,
-    "pct_part_time": 0.1461
+    "pct_part_time": 0.1461,
+    "scholarship_url": "https://www.umt.edu/finaid/scholarships/new-freshman-scholarships/default.php",
+    "scholarship_display_name": "Academic Achievement Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -55017,7 +55259,9 @@
     "books_supplies_cost": 1450,
     "other_expenses_oncampus": 4026,
     "federal_loan_rate": 0.3141,
-    "pct_part_time": 0.1084
+    "pct_part_time": 0.1084,
+    "scholarship_url": "https://www.montana.edu/international/admissions/INTL_UG_Scholarships.html",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 28,
@@ -56318,7 +56562,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 3924,
     "federal_loan_rate": 0.2892,
-    "pct_part_time": 0.1356
+    "pct_part_time": 0.1356,
+    "scholarship_url": "https://www.missouristate.edu/Policy/Chapter5/Op5_08_22_Scholarships_for_International_Students.htm",
+    "scholarship_display_name": "International Leadership Scholarship"
   },
   {
     "act_75": 26,
@@ -56519,7 +56765,9 @@
     "books_supplies_cost": 696,
     "other_expenses_oncampus": 5816,
     "federal_loan_rate": 0.3295,
-    "pct_part_time": 0.1138
+    "pct_part_time": 0.1138,
+    "scholarship_url": "https://semo.edu/student-support/financial-services/_pdfs/2425internationalscholarshiptermsandconditions.pdf",
+    "scholarship_display_name": "International Academic Excellence award"
   },
   {
     "act_75": 25,
@@ -56818,7 +57066,9 @@
     "books_supplies_cost": 1070,
     "other_expenses_oncampus": 5000,
     "federal_loan_rate": 0.2966,
-    "pct_part_time": 0.078
+    "pct_part_time": 0.078,
+    "scholarship_url": "https://www.slu.edu/financial-aid/types-of-aid/scholarships.php",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 26,
@@ -56932,7 +57182,9 @@
     "books_supplies_cost": 2000,
     "other_expenses_oncampus": 5923,
     "federal_loan_rate": 0.3506,
-    "pct_part_time": 0.0601
+    "pct_part_time": 0.0601,
+    "scholarship_url": "https://www.rockhurst.edu/admissions/freshman/scholarships",
+    "scholarship_display_name": "Trustees' Scholarship"
   },
   {
     "act_75": 25,
@@ -57372,7 +57624,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 7188,
     "federal_loan_rate": 0.1925,
-    "pct_part_time": 0.2442
+    "pct_part_time": 0.2442,
+    "scholarship_url": "https://admissions.missouri.edu/costs-aid/scholarships/international-student-scholarships/",
+    "scholarship_display_name": "International Honors Scholarship"
   },
   {
     "act_75": 31,
@@ -59862,7 +60116,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 5444,
     "federal_loan_rate": 0.6525,
-    "pct_part_time": 0.2889
+    "pct_part_time": 0.2889,
+    "scholarship_url": "https://www.ccis.edu/international-students",
+    "scholarship_display_name": "CC Excellence Scholarship"
   },
   {
     "act_75": 5,
@@ -60554,7 +60810,9 @@
     "books_supplies_cost": 852,
     "other_expenses_oncampus": 5090,
     "federal_loan_rate": 0.4775,
-    "pct_part_time": 0.1386
+    "pct_part_time": 0.1386,
+    "scholarship_url": "https://www.usm.edu/undergraduate-scholarships/freshman-scholarships.php",
+    "scholarship_display_name": "Academic Excellence + Freshman Academic Housing + other"
   },
   {
     "pct_intl_students": 4,
@@ -60752,7 +61010,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 6409,
     "federal_loan_rate": 0.3869,
-    "pct_part_time": 0.0833
+    "pct_part_time": 0.0833,
+    "scholarship_url": "https://www.admissions.msstate.edu/sites/www.admissions.msstate.edu/files/inline-files/Scholarship%2520Sheet%2520Charts%2520Freshman%2520Out-of-State%2520Residents%252023-24.pdf",
+    "scholarship_display_name": "Out-of-state resident scholarship"
   },
   {
     "act_75": 25,
@@ -61233,7 +61493,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 6700,
     "federal_loan_rate": 0.3717,
-    "pct_part_time": 0.0477
+    "pct_part_time": 0.0477,
+    "scholarship_url": "https://international.olemiss.edu/scholarships-for-international-undergraduates/",
+    "scholarship_display_name": "International Academic Excellence Scholarship"
   },
   {
     "act_75": 24,
@@ -61433,7 +61695,9 @@
     "books_supplies_cost": 650,
     "other_expenses_oncampus": 1792,
     "federal_loan_rate": 0.5911,
-    "pct_part_time": 0.0109
+    "pct_part_time": 0.0109,
+    "scholarship_url": "https://www.millsaps.edu/admission/millsaps-premier-scholarships/",
+    "scholarship_display_name": "Premier Scholarship"
   },
   {
     "act_75": 24,
@@ -61839,7 +62103,9 @@
     "books_supplies_cost": 1400,
     "other_expenses_oncampus": 18646,
     "federal_loan_rate": 0.8222,
-    "pct_part_time": 0.0996
+    "pct_part_time": 0.0996,
+    "scholarship_url": "https://www.jsums.edu/recruitment/jsu-scholarship-info-recruitment/",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "act_75": 19,
@@ -62320,7 +62586,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 2600,
     "federal_loan_rate": 0.4865,
-    "pct_part_time": 0.1336
+    "pct_part_time": 0.1336,
+    "scholarship_url": "https://www.winona.edu/financial-aid/paying-for-college/scholarships/",
+    "scholarship_display_name": "Cross-Cultural Scholarship"
   },
   {
     "act_75": 25,
@@ -62646,7 +62914,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 900,
     "federal_loan_rate": 0.4196,
-    "pct_part_time": 0.0087
+    "pct_part_time": 0.0087,
+    "scholarship_url": "https://wp.stolaf.edu/admissions/afford/scholarships/",
+    "scholarship_display_name": "Buntrock Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -64373,7 +64643,9 @@
     "books_supplies_cost": 1500,
     "other_expenses_oncampus": 5883,
     "federal_loan_rate": 0.3274,
-    "pct_part_time": 0.2419
+    "pct_part_time": 0.2419,
+    "scholarship_url": "https://radow.kennesaw.edu/gradstudents/financial/for_intl.php",
+    "scholarship_display_name": "International Student Scholarships"
   },
   {
     "pct_intl_students": 0,
@@ -65331,7 +65603,9 @@
     "pct_first_generation": 0.3076658251,
     "books_supplies_cost": 810,
     "federal_loan_rate": 0.1236,
-    "pct_part_time": 0.4688
+    "pct_part_time": 0.4688,
+    "scholarship_url": "https://admissions.ufl.edu/cost-and-aid/scholarships#international-scholarships",
+    "scholarship_display_name": "Out-of-State tuition waiver"
   },
   {
     "pct_intl_students": 0,
@@ -66244,7 +66518,9 @@
     "books_supplies_cost": 1470,
     "other_expenses_oncampus": 3790,
     "federal_loan_rate": 0.1968,
-    "pct_part_time": 0.2485
+    "pct_part_time": 0.2485,
+    "scholarship_url": "https://ung.edu/cost-aid/scholarships/new-students-scholarships.php",
+    "scholarship_display_name": "Full Presidential Tuition Waiver (PTW)"
   },
   {
     "act_75": 30,
@@ -67132,7 +67408,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 5095,
     "federal_loan_rate": 0.3291,
-    "pct_part_time": 0.3451
+    "pct_part_time": 0.3451,
+    "scholarship_url": "https://honors.gsu.edu/scholars/",
+    "scholarship_display_name": "Stamps and Presidential Scholarships"
   },
   {
     "pct_intl_students": 6,
@@ -67740,7 +68018,9 @@
     "pct_first_generation": 0.4013402829,
     "books_supplies_cost": 1200,
     "federal_loan_rate": 0.5723,
-    "pct_part_time": 0.3474
+    "pct_part_time": 0.3474,
+    "scholarship_url": "https://www.fit.edu/admission/scholarships--aid/university-scholarships-and-grants/",
+    "scholarship_display_name": "Panther Fund Merit Scholarship"
   },
   {
     "pct_intl_students": 1,
@@ -69289,7 +69569,9 @@
     "pct_first_generation": 0.2664932932,
     "books_supplies_cost": 990,
     "federal_loan_rate": 0.3822,
-    "pct_part_time": 0.0407
+    "pct_part_time": 0.0407,
+    "scholarship_url": "https://admissions.uconn.edu/cost-aid/scholarship/",
+    "scholarship_display_name": "Stamps Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -73788,7 +74070,9 @@
     "books_supplies_cost": 240,
     "other_expenses_oncampus": 2221,
     "federal_loan_rate": 0.2525,
-    "pct_part_time": 0.0027
+    "pct_part_time": 0.0027,
+    "scholarship_url": "https://www.olin.edu/admission/costs-financial-aid",
+    "scholarship_display_name": "Tuition Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -74994,7 +75278,9 @@
     "books_supplies_cost": 800,
     "other_expenses_oncampus": 2656,
     "federal_loan_rate": 0.4038,
-    "pct_part_time": 0.144
+    "pct_part_time": 0.144,
+    "scholarship_url": "https://www.mnsu.edu/academics/global-education/centers-of-global-education/international-student-services/scholarships/cultural-contribution-scholarship/",
+    "scholarship_display_name": "International Maverick Scholarships"
   },
   {
     "act_75": 31,
@@ -75100,7 +75386,9 @@
     "teacher_recs_required": null,
     "other_recs_required": null,
     "mid_year_report": false,
-    "counselor_rec_required": false
+    "counselor_rec_required": false,
+    "scholarship_url": "https://isss.umn.edu/students/support-services/funding/global-excellence-scholarship",
+    "scholarship_display_name": "Global Excellence Scholarships"
   },
   {
     "act_75": 34,
@@ -75216,7 +75504,9 @@
     "room_board_oncampus": 15760,
     "other_expenses_oncampus": 2270,
     "federal_loan_rate": 0.3557,
-    "pct_part_time": 0.015
+    "pct_part_time": 0.015,
+    "scholarship_url": "https://www.macalester.edu/financial-aid/about/merit-2/",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "act_75": 21,
@@ -75603,7 +75893,9 @@
     "books_supplies_cost": 500,
     "other_expenses_oncampus": 3572,
     "federal_loan_rate": 0.6797,
-    "pct_part_time": 0.171
+    "pct_part_time": 0.171,
+    "scholarship_url": "https://www.luther.edu/admission-aid/cost-financial-aid/scholarships",
+    "scholarship_display_name": "Founder's Scholarship"
   },
   {
     "act_75": 34,
@@ -75720,7 +76012,9 @@
     "books_supplies_cost": 938,
     "other_expenses_oncampus": 1788,
     "federal_loan_rate": 0.434,
-    "pct_part_time": 0
+    "pct_part_time": 0,
+    "scholarship_url": "https://www.carleton.edu/international/applying/looking/scholarship/",
+    "scholarship_display_name": "Starr Scholarship"
   },
   {
     "act_75": 30,
@@ -75833,7 +76127,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 1180,
     "federal_loan_rate": 0.54,
-    "pct_part_time": 0.0186
+    "pct_part_time": 0.0186,
+    "scholarship_url": "https://gustavus.edu/admission/admissions/President%27sScholarship.php",
+    "scholarship_display_name": "President's Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -76371,7 +76667,9 @@
     "books_supplies_cost": 1128,
     "other_expenses_oncampus": 2697,
     "federal_loan_rate": 0.471,
-    "pct_part_time": 0.1271
+    "pct_part_time": 0.1271,
+    "scholarship_url": "https://wmich.edu/internationaladmissions/financialaid/undergraduate",
+    "scholarship_display_name": "Global Education Merit Scholarship"
   },
   {
     "pct_intl_students": 4,
@@ -76589,7 +76887,9 @@
     "books_supplies_cost": 1360,
     "other_expenses_oncampus": 4314,
     "federal_loan_rate": 0.3779,
-    "pct_part_time": 0.1881
+    "pct_part_time": 0.1881,
+    "scholarship_url": "https://oip.wayne.edu/oiss/finances/youarewelcomehere",
+    "scholarship_display_name": "#YouAreWelcomeHere Scholarship"
   },
   {
     "act_75": 23,
@@ -77266,7 +77566,9 @@
     "books_supplies_cost": 1380,
     "other_expenses_oncampus": 3838,
     "federal_loan_rate": 0.3363,
-    "pct_part_time": 0.0615
+    "pct_part_time": 0.0615,
+    "scholarship_url": "https://admissions.msu.edu/cost-aid/scholarships/international",
+    "scholarship_display_name": "International Tuition Grant"
   },
   {
     "act_75": 31,
@@ -77384,7 +77686,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 2785,
     "federal_loan_rate": 0.4555,
-    "pct_part_time": 0.0326
+    "pct_part_time": 0.0326,
+    "scholarship_url": "https://www.mtu.edu/admissions/financial/scholarships/",
+    "scholarship_display_name": "Alumni Legacy Award"
   },
   {
     "act_75": 24,
@@ -78092,7 +78396,9 @@
     "books_supplies_cost": 1818,
     "other_expenses_oncampus": 5314,
     "federal_loan_rate": 0.346,
-    "pct_part_time": 0.0791
+    "pct_part_time": 0.0791,
+    "scholarship_url": "https://www.ltu.edu/financial-aid/scholarships-freshmen",
+    "scholarship_display_name": "Presidential Scholarship"
   },
   {
     "pct_intl_students": 8,
@@ -78202,7 +78508,9 @@
     "books_supplies_cost": 2000,
     "other_expenses_oncampus": 1670,
     "federal_loan_rate": 0.3703,
-    "pct_part_time": 0.1275
+    "pct_part_time": 0.1275,
+    "scholarship_url": "https://www.lssu.edu/admissions/financial-aid/scholarships/2022-2023-incoming-freshmen-scholarships/#laker",
+    "scholarship_display_name": "Senator Philip A. Hart Memorial Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -78398,7 +78706,9 @@
     "books_supplies_cost": 1190,
     "other_expenses_oncampus": 2100,
     "federal_loan_rate": 0.4418,
-    "pct_part_time": 0.0158
+    "pct_part_time": 0.0158,
+    "scholarship_url": "https://hope.edu/admissions/scholarships.html",
+    "scholarship_display_name": "Trustee Scholarship"
   },
   {
     "act_75": 29,
@@ -78515,7 +78825,9 @@
     "books_supplies_cost": 900,
     "other_expenses_oncampus": 2460,
     "federal_loan_rate": 0.4498,
-    "pct_part_time": 0.0104
+    "pct_part_time": 0.0104,
+    "scholarship_url": "https://admission.kzoo.edu/cost-value/",
+    "scholarship_display_name": "Lux Esto Scholarship"
   },
   {
     "act_75": 30,
@@ -78745,7 +79057,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 2000,
     "federal_loan_rate": 0,
-    "pct_part_time": 0.0203
+    "pct_part_time": 0.0203,
+    "scholarship_url": "https://www.hillsdale.edu/admissions-aid/financial-aid/scholarships/",
+    "scholarship_display_name": "Merit Scholarship and Leadership Scholarship"
   },
   {
     "act_75": 30,
@@ -78863,7 +79177,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 4416,
     "federal_loan_rate": 0.4527,
-    "pct_part_time": 0.0249
+    "pct_part_time": 0.0249,
+    "scholarship_url": "https://www.kettering.edu/admissions/financial-aid/financial-aid-101/scholarships",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "pct_intl_students": 5,
@@ -79158,7 +79474,9 @@
     "books_supplies_cost": 890,
     "other_expenses_oncampus": 2492,
     "federal_loan_rate": 0.4336,
-    "pct_part_time": 0.1911
+    "pct_part_time": 0.1911,
+    "scholarship_url": "https://www.ferris.edu/admissions/financialaid/scholarship/Incoming/incoming-international.htm",
+    "scholarship_display_name": "Founder's Scholarship"
   },
   {
     "act_75": 27,
@@ -79276,7 +79594,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 3134,
     "federal_loan_rate": 0.429,
-    "pct_part_time": 0.2301
+    "pct_part_time": 0.2301,
+    "scholarship_url": "https://www.emich.edu/admissions/international/costs-scholarships/global-rate.php",
+    "scholarship_display_name": "TRUEMU Global Rate"
   },
   {
     "pct_intl_students": 4,
@@ -79863,7 +80183,9 @@
     "books_supplies_cost": 1250,
     "other_expenses_oncampus": 2850,
     "federal_loan_rate": 0.6872,
-    "pct_part_time": 0.1364
+    "pct_part_time": 0.1364,
+    "scholarship_url": "https://www.cmich.edu/admissions-aid/international-students/scholarships/international-scholarships",
+    "scholarship_display_name": "Centralis Scholar Award"
   },
   {
     "act_75": 26,
@@ -80099,7 +80421,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 2600,
     "federal_loan_rate": 0.3344,
-    "pct_part_time": 0.0598
+    "pct_part_time": 0.0598,
+    "scholarship_url": "https://calvin.edu/offices-services/financial-aid/types/scholarships/academic-scholarships/index.html",
+    "scholarship_display_name": "Trustee Scholarship"
   },
   {
     "pct_intl_students": 0,
@@ -80428,7 +80752,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 1200,
     "federal_loan_rate": 0.5173,
-    "pct_part_time": 0.0215
+    "pct_part_time": 0.0215,
+    "scholarship_url": "https://www.wpi.edu/admissions/tuition-aid/types-of-aid/scholarships-grants/wpi-merit",
+    "scholarship_display_name": "Presidential Scholarships"
   },
   {
     "pct_intl_students": 6,
@@ -80540,7 +80866,9 @@
     "books_supplies_cost": 2172,
     "other_expenses_oncampus": 2980,
     "federal_loan_rate": 0.566,
-    "pct_part_time": 0.0174
+    "pct_part_time": 0.0174,
+    "scholarship_url": "https://www.alma.edu/financial-aid/scholarships/",
+    "scholarship_display_name": "Distinguished Presidential Scholarship"
   },
   {
     "pct_intl_students": 5,
@@ -80651,7 +80979,9 @@
     "books_supplies_cost": 850,
     "other_expenses_oncampus": 950,
     "federal_loan_rate": 0.6366,
-    "pct_part_time": 0.0046
+    "pct_part_time": 0.0046,
+    "scholarship_url": "https://www.albion.edu/offices/financial-aid/aid-scholarships/scholarships/",
+    "scholarship_display_name": "Distinguished Albion Scholarship"
   },
   {
     "pct_intl_students": 2,
@@ -81167,7 +81497,9 @@
     "books_supplies_cost": 940,
     "other_expenses_oncampus": 1060,
     "federal_loan_rate": 0.7754,
-    "pct_part_time": 0.0023
+    "pct_part_time": 0.0023,
+    "scholarship_url": "https://wheatoncollege.edu/about-wheaton-college/offices-services/student-financial-services/financing-options/information-for-international-students/",
+    "scholarship_display_name": "Wheaton Merit Scholarships"
   },
   {
     "act_75": 31,
@@ -81498,7 +81830,9 @@
     "books_supplies_cost": 893,
     "other_expenses_oncampus": 3275,
     "federal_loan_rate": 0.6242,
-    "pct_part_time": 0.0091
+    "pct_part_time": 0.0091,
+    "scholarship_url": "https://www.stonehill.edu/offices-and-services/financial-aid/undergraduate-students/how-to-apply-for-financial-aid/international-students/",
+    "scholarship_display_name": "Moreau Honors Scholarship"
   },
   {
     "act_75": 35,
@@ -82148,7 +82482,9 @@
     "books_supplies_cost": 1280,
     "other_expenses_oncampus": 2550,
     "federal_loan_rate": 0.6341,
-    "pct_part_time": 0.1036
+    "pct_part_time": 0.1036,
+    "scholarship_url": "https://www.simmons.edu/undergraduate/admission-and-financial-aid/tuition-financial-aid/types-financial-aid/scholarships/distinguished-scholar",
+    "scholarship_display_name": "Distinguished Scholar Award"
   },
   {
     "act_75": 35,
@@ -82266,7 +82602,9 @@
     "books_supplies_cost": 800,
     "other_expenses_oncampus": 2514,
     "federal_loan_rate": 0.1409,
-    "pct_part_time": 0.0028
+    "pct_part_time": 0.0028,
+    "scholarship_url": "https://www.smith.edu/academics/applied-learning-research/stride-program",
+    "scholarship_display_name": "Stride Scholarship"
   },
   {
     "pct_intl_students": 43,
@@ -82822,7 +83160,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1800,
     "federal_loan_rate": 0.2732,
-    "pct_part_time": 0
+    "pct_part_time": 0,
+    "scholarship_url": "https://studentfinance.northeastern.edu/applying-for-aid/international-students/",
+    "scholarship_display_name": "International Scholars Award"
   },
   {
     "pct_intl_students": 0,
@@ -83236,7 +83576,9 @@
     "books_supplies_cost": 1000,
     "other_expenses_oncampus": 1400,
     "federal_loan_rate": 0.4351,
-    "pct_part_time": 0.0023
+    "pct_part_time": 0.0023,
+    "scholarship_url": "https://www.mtholyoke.edu/admission/apply-undergraduate-first-year/affording-mount-holyoke/financial-aid/types-financial-aid/non-need-based-scholarships-and-awards",
+    "scholarship_display_name": "Trustee Scholarship"
   },
   {
     "act_75": 36,
@@ -83910,7 +84252,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 1366,
     "federal_loan_rate": 0.5302,
-    "pct_part_time": 0.1774
+    "pct_part_time": 0.1774,
+    "scholarship_url": "https://www.uml.edu/thesolutioncenter/financial-aid/scholarships/freshmen.aspx#Non-Mass",
+    "scholarship_display_name": "Merit Scholarship"
   },
   {
     "act_75": 29,
@@ -84241,7 +84585,9 @@
     "books_supplies_cost": 1200,
     "other_expenses_oncampus": 1440,
     "federal_loan_rate": 0.4662,
-    "pct_part_time": 0.0425
+    "pct_part_time": 0.0425,
+    "scholarship_url": "https://www.umass.edu/financialaid/undergraduate/undergraduate-scholarships/umass-admissions-scholarships-and-awards",
+    "scholarship_display_name": "Merit Award"
   },
   {
     "pct_intl_students": 3,
@@ -84708,5 +85054,5 @@
     "retention_rate": 0.7099,
     "popular_programs": [],
     "website_url": "www.framingham.edu/"
-}
+  }
 ]
